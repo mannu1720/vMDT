@@ -9923,6 +9923,7 @@ a:focus {
 .sidebar .nav-item .nav-link,
 .topbar .nav-item .nav-link {
   position: relative;
+
 }
 
 .sidebar .nav-item .nav-link .badge-counter,
@@ -11008,8 +11009,9 @@ body.sidebar-toggled footer.sticky-footer {
 
 .notification_container{
   display: inline-block;
-  border-bottom: 1px solid #ddd;
   max-height: 640px;
+  overflow: hidden;
+
 }
 
 .notification_text label{
@@ -11030,11 +11032,10 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
 .notification_text{
-   padding: 0;
-   vertical-align: top;
-    width: 100%;
+    margin-left: 15px;
+    padding: 2px;
+    width: 73%;
     display: inline-block;
-   
 }
 .notification{
   padding: 6px 15px 0px 15px;
@@ -11049,4 +11050,26 @@ body.sidebar-toggled footer.sticky-footer {
 .notification p {
   font-size: 10px;
   line-height: 22px;
+}
+.notification_image{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top:20px;
+  overflow: hidden;
+  transition: all 1000ms ease;
+  border: 5px solid white;
+  position:relative;
+  z-index:9;
+  box-shadow: 0 0 7px  #aba8a8;
+
+}
+
+.notification img{
+width: 100%;
+display: inline-block;
+}
+
+
 }
