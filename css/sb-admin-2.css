@@ -1379,7 +1379,7 @@ pre code {
 }
 
 .table thead th {
-  vertical-align: bottom;
+ /*--- vertical-align: bottom; */
   border-bottom: 2px solid #e3e6f0;
 }
 
@@ -1421,6 +1421,7 @@ pre code {
   color: #858796;
   background-color: rgba(0, 0, 0, 0.075);
 }
+
 
 .table-primary,
 .table-primary > th,
@@ -3173,6 +3174,8 @@ input[type="button"].btn-block {
   margin-left: 0;
 }
 
+
+
 .dropleft .dropdown-toggle-split::before {
   margin-right: 0;
 }
@@ -4072,6 +4075,7 @@ input[type="button"].btn-block {
   }
 }
 
+
 @media (max-width: 767.98px) {
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid {
@@ -4672,11 +4676,10 @@ input[type="button"].btn-block {
   border-bottom-right-radius: 0.2rem;
 }
 
+
 .badge {
   display: inline-block;
   padding: 0.25em 0.4em;
-  font-size: 75%;
-  font-weight: 700;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
@@ -5944,7 +5947,47 @@ a.close.disabled {
   clear: both;
   content: "";
 }
-
+table.dataTable {
+  clear: both;
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+  max-width: none !important;
+  border-collapse: separate !important;
+  border-spacing: 0;
+  font-size: 11.5px;
+}
+.badge-primary{
+  padding: 10px;
+  margin: 15px;
+}
+.badge-secondary{
+  padding: 10px;
+  margin: 15px;
+}
+.badge-danger{
+  padding: 10px;
+  margin: 15px;
+}
+.badge-warning{
+  padding: 10px;
+  margin: 15px;
+}
+.badge-dark{
+  padding: 10px;
+  margin: 15px;
+}
+.badge-info{
+  padding: 10px;
+  margin: 15px;
+}
+.badge-success{
+  padding: 10px;
+  margin: 15px;
+}
+.badge-warning{
+  padding: 10px;
+  margin: 15px;
+}
 .carousel-item {
   position: relative;
   display: none;
@@ -6161,7 +6204,16 @@ a.close.disabled {
     opacity: 1;
   }
 }
-
+table.dataTable {
+    font-size: 10px;
+    clear: both;
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+    max-width: none !important;
+    border-collapse: separate !important;
+    border-spacing: 0;
+}
+table.dataTable 
 .spinner-grow {
   display: inline-block;
   width: 2rem;
@@ -6206,6 +6258,7 @@ a.close.disabled {
 .bg-primary {
   background-color: #4e73df !important;
 }
+
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
