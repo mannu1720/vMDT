@@ -290,184 +290,278 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading 
-          <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-          <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>-->
-
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">MDT Cases
-                <button class="brn btn-primary" style="float: right;" data-toggle="modal" data-target="#newMdtModal">Add New</button>
+              <h6 class="m-0 font-weight-bold text-primary">MDT Case
               </h6>
             </div>
             <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Patients’(with NHS No)</th>
-                      <th>Age (Gender)</th>
-                      <th>Referrer</th>
-                      <th>Referral date</th>
-                      <th>Reason</th>
-                      <th>Surgery</th>
-                      <th>Subspecialty</th>
-                      <th>Priority</th>
-                      <th>Status</th>
-                      <th>Tagged</th>
-                      <th>Last MDT discussion</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="clickable-row" data-href='new-mdt-case.html'>
-                      <td>Adam smith 1234 5678 90</td>
-                      <td>66 M</td>
-                      <td>Dr Jones</td>
-                      <td>25/04/20</td>
-                      <td>SOB on exertion NYHA 3</td>
-                      <td>Green surgery</td>
-                      <td>HeFPef - Heart Failure with Preserved Ejection Fraction</td>
-                      <td>High</td>
-                      <td>
-                        <span class="badge badge-info">Pending booking</span>
-                      </td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Shiela Smith 0987654321
-                      </td>
-                      <td>72 F</td>
-                      <td>Dr Patel</td>
-                      <td>15/04/20</td>
-                      <td>Medication optimisation advice</td>
-                      <td>Blue Surgery</td>
-                      <td>HeFRef - Heart Failure with Reduced Ejection Fraction</td>
-                      <td>Medium</td>
-                      <td>
-                        <span class="badge badge-success">Action Closed</span>
-                      </td>
-                      <td>-</td>
-                      <td>X</td>
+              <div class="card">
+                <div class="card-body">
+                  <div>
+                    <label for="">Name of Referrer:</label>
+                    <span>Dr Jones</span>
+                  </div>
+                  <div>
+                    <label for="">Designation:</label>
+                    <span>GP</span>
+                  </div>
+                  <div>
+                    <label for="">GMC number</label>
+                    <span>6171433</span>
+                  </div>
+                  <div>
+                    <label for="">Date Completed:</label>
+                    <span>15-May-2020</span>
+                  </div>
+                  <div>
+                    <label for="">Case Number:</label>
+                    <span>54127</span>
+                  </div>
+                  <div>
+                    <label for="">Priority:</label>
+                    <span>routine</span>
+                  </div>
+                  <div>
+                    <label for="">Coordinator:</label>
+                    <span>Dr. Majid Akram</span>
+                  </div>
+                  <div>
+                    <label for="">Repeat Patient:</label>
+                    <span>Yes</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">Personal Details</div>
+                <div class="card-body">
+                  <div>
+                    <label for=""> Patient’s Name</label>:
+                    <span> MICKEY, Mouse (Mr) </span>
+                  </div>
+                  <div>
+                    <label for=""> Address</label>:
+                    <span> Mickey Mouse Clubhouse</span>
+                  </div>
+                  London
+                  <div>
+                    <label for=""> Home tele No</label>:
+                    <span> 01778 576880</span>
+                  </div>
+                  Mobile number 07867111999
+                  <div>
+                    <label for=""> Next Of Kin / contact details</label>:
+                    <span> Minnie mouse (Wife)</span>
+                  </div>
+                  <div>
+                    <label for=""> Consultant</label>:
+                    <span>NA</span>
+                  </div>
+
+                  <div>
+                    <label for=""> Registered GP</label>:
+                    <span> MR Jacob Stuarts </span>
+                  </div>
+                  <div>
+                    <label for=""> Practice</label>:
+                    <span> The Knightsbridge Practice Temple Street Market Deeping Lincolnshire PE6 8QQ</span>
+                  </div>
+
+                  <div>
+                    <label for="">D.O.B.: </label>
+                    <span>18-Nov-1928</span>
+                  </div>
+                  <div>
+                    <label for="">NHS No: </label>
+                    <span>8887776567</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">Case Details</div>
+                <div class="card-body">
+                  <div>
+                    <label for="">Cardiology: </label>
+                    <span>Heart Failure with Reduced Ejection Fraction</span>
+                  </div>
+                  <div>
+                    <label for="">Details of reason for referral / presenting symptoms: </label>
+                    <span>
+                      Continuing SOBOE despite 10mg Ramipril and 10mg Bisoprolol and 80mg Furosemide. NYHA 3
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">Clinical Details</div>
+                <div class="card-body">
+                  <div>
+                    <label for="">Current Medication: </label>
+                    <span>Diuretic</span>
+                  </div>
+                  <table class="table table-bordered">
+                    <thead>
+                      <th colspan="6">Recent Investigations</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Haemoglobin</th>
+                        <td>132</td>
+                        <th>Urea</th>
+                        <td>6.0</td>
+                        <th>Creatinine</th>
+                        <td>70</td>
+                      </tr>
+                      <tr>
+                        <th>Ferritin</th>
+                        <td>112</td>
+                        <th>BNP</th>
+                        <td>568</td>
+                        <th>eGFR</th>
+                        <td>62</td>
+                      </tr>
+                      <tr>
+                        <th>Sodium</th>
+                        <td>134</td>
+                        <th>Potassium</th>
+                        <td>4.44</td>
+                        <th>TSH</th>
+                        <td>2.7</td>
+                      </tr>
+
+                      <tr>
+                        <th>BP systolic</th>
+                        <td>146</td>
+                        <th>BP disastolic</th>
+                        <td>88</td>
+                        <th>NYHA Score (1-4)</th>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <th>Pulse</th>
+                        <td>96</td>
+                        <th>BMI</th>
+                        <td>26.7</td>
+                        <th>Ejection Fraction</th>
+                        <td>34%</td>
+                      </tr>
+                      <tr>
+                        <th>O2 Sats</th>
+                        <td>96%</td>
+                        <th>Height</th>
+                        <td>170 cm</td>
+                        <th>Smoking status</th>
+                        <td>Ex smoker</td>
+                      </tr>
+                      Weight 89 kg Alcohol intake 12 units per week Respiratory Rate 20 / min Odema present
+
+                      <tr>
+                        <th>Weight</th>
+                        <td>89 kg</td>
+                        <th>Alcohol intake</th>
+                        <td>12 units per week</td>
+                        <th></th>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th>Respiratory Rate</th>
+                        <td>20 / min</td>
+                        <th>Odema</th>
+                        <td>present</td>
+                        <th></th>
+                        <td></td>
+                      </tr>
 
 
-                    </tr>
-                    <tr>
-                      <td>Gill Stewarts 2223334444
-                      </td>
-                      <td>70 F</td>
-                      <td>Dr Khan</td>
-                      <td>20/04/20</td>
-                      <td>Rate control advice</td>
-                      <td>Yellow Surgery</td>
-                      <td>Atrial Fibrillation or Flutter</td>
-                      <td>Medium</td>
-                      <td>
-                        <span class="badge badge-danger">Pending Action</span>
-                      </td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Robert Smith 4447778889
-                      </td>
-                      <td>80 M</td>
-                      <td>Dr Jones</td>
-                      <td>25/04/20</td>
-                      <td>Anticoagulation advice</td>
-                      <td>Green Surgery</td>
-                      <td>Atrial Fibrillation or Flutter</td>
-                      <td>Medium</td>
-                      <td>
-                        <span class="badge badge-success">Action Closed</span>
-                      </td>
-                      <td> interesting case</td>
-                      <td>22/2/20</td>
-                    </tr>
-                    <tr>
-                      <td>Mickey Mouse 8765491299
-                      </td>
-                      <td>54M</td>
-                      <td>Dr Neil</td>
-                      <td>22/04/20</td>
-                      <td>Symptoms despite base line treatment</td>
-                      <td>Red Surgery</td>
-                      <td>HeFRef - Heart Failure with Reduced Ejection Fraction</td>
-                      <td>Medium</td>
-                      <td>
-                        <span class="badge badge-warning">Action closed</span>
-                      </td>
-                      <td> result awaited</td>
-                      <td>20/1/20</td>
-                    </tr>
-                    <tr>
-                      <td>Mickey Mouse 8765491299
-                      </td>
-                      <td>54M</td>
-                      <td>Dr Neil</td>
-                      <td>22/04/20</td>
-                      <td>Symptoms despite base line treatment</td>
-                      <td>Red Surgery</td>
-                      <td>HeFRef - Heart Failure with Reduced Ejection Fraction</td>
-                      <td>Medium</td>
-                      <td>
-                        <span class="badge badge-info">Booked</span>
-                      </td>
-                      <td> result awaited</td>
-                      <td>20/1/20</td>
-                    </tr>
-                    <tr>
-                      <td>Luther Vandross 5463728907
-                      </td>
-                      <td>68F</td>
-                      <td>Dr James</td>
-                      <td>28/04/20</td>
-                      <td>Assess for pace maker suitability?</td>
-                      <td>Brown Surgery</td>
-                      <td>HeFRef - Heart Failure with Reduced Ejection Fraction</td>
-                      <td>Medium</td>
-                      <td>
-                        <span class="badge badge-warning">Pending Booking</span>
-                      </td>
-
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Michael Jackson 9876527182
-                      </td>
-                      <td>90M</td>
-                      <td>Dr Jones</td>
-                      <td>27/04/20</td>
-                      <td>Side effect of DOAC – advise</td>
-                      <td>Green Surgery</td>
-                      <td>Atrial Fibrillation or Flutter</td>
-                      <td>Low</td>
-                      <td>
-                        <span class="badge badge-dark">Pending Action</span>
-                      </td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Donald Trump 89761526781
-                      </td>
-                      <td>83M</td>
-                      <td>Dr Jones</td>
-                      <td>28/04/20</td>
-                      <td>Rate control needed?</td>
-                      <td> Green Surgery</td>
-                      <td>Atrial Fibrillation or Flutter</td>
-                      <td>Medium</td>
-                      <td>
-                        <span class="badge badge-dark">Pending Booking</span>
-                      </td>
-                      <td> To do list</td>
-                      <td>18/3/20</td>
-                    </tr>
-                  </tbody>
-                </table>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="card">
+                  <div class="card-header">Past Medical History</div>
+                  <div class="card-body">
+                    <ul>
+                      <li>Hypertension</li>
+                      <li>Type 2 Diabetes</li>
+                      <li>Gout</li>
+                      <li>Osteoporosis</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">Drug History</div>
+                  <div class="card-body">
+                    <ul>
+                      <li>Furosemide 80 mg in morning</li>
+                      <li>Ramipril 10mg once dialy</li>
+                      <li>Bisoprolol 10mg once daily</li>
+                      <li>Metformin 500mg Twice Daily</li>
+                      <li>Alendronic Acid 70mg weekly</li>
+                      <li>Adcal D3 two daily</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <label for="">Allergies</label>
+                  <span>Penicillin</span>
+                </div>
+                <div>
+                  <label for="">Social Situation</label>
+                  <span>Retired, lives with wife</span>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <form>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                    <div class="form-group">
+                      <label for="sel1">Select Clinic: </label>
+                      <select class="form-control" id="sel1">
+                        <option>Cardiovascular Green MDT</option>
+                        <option>Cardiovascular Yellow MDT</option>
+                        <option>Cardiovascular Blue MDT</option>
+                        <option>Cardiovascular Orange MDT</option>
+                        <option>Cardiovascular White MDT</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="sel1">Change Priority: </label>
+                      <select class="form-control" id="sel1">
+                        <option>Routine</option>
+                        <option>Soon</option>
+                        <option>Urgent</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="sel1">Tag: </label>
+                      <select class="form-control" id="sel1">
+                        <option>Interesting case</option>
+                        <option>Result awaited</option>
+                        <option>To do list</option>
+                        <option>Discuss with collegue</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="sel1">Change Coordinator: </label>
+                      <select class="form-control" id="sel1">
+                        <option>Ms Sharda Patel</option>
+                        <option>Mr. Nick Jones</option>
+                        <option>Dr. Richard Farrell</option>
+                        <option>Dr. Robert Dixon</option>
+                        <option>Dr. Tami Russell</option>
+                        <option>Ms Ruth Morris</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="">Add Notes</label>
+                      <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -518,42 +612,6 @@
     </div>
   </div>
 
-  <!-- New Mdt Modal-->
-  <div class="modal fade" id="newMdtModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">How do you want to create</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="upload" id="upload" checked>Upload Refferal Form
-            </label>
-          </div>
-          <form>
-            <div class="custom-file">
-              <input type="file" class="custom-file-input" id="customFile">
-              <label class="custom-file-label" for="customFile">Choose file</label>
-            </div>
-          </form>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="mannual" id="mannual">Fill Refferal Form Manually
-            </label>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <button class="btn btn-primary" onclick="proceed()">Proceed</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -570,27 +628,8 @@
 
   <!-- Page level custom scripts -->
   <script src="js/demo/datatables-demo.js"></script>
-  <script type="text/javascript">
-    function proceed() {
-      if (document.getElementById("upload").checked) {
-        location.replace('upload-mdt-case.html')
-      } else if (document.getElementById("mannual").checked) {
-        location.replace('new-mdt-case.html')
-      }
-    }
-  </script>
-  <script>
-    // Add the following code if you want the name of the file appear on select
-    $(".custom-file-input").on("change", function () {
-      var fileName = $(this).val().split("\\").pop();
-      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-    });
-    jQuery(document).ready(function ($) {
-      $(".clickable-row").click(function () {
-        window.location = $(this).data("href");
-      });
-    });
-  </script>
+
+
 </body>
 
 </html>
