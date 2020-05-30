@@ -12,19 +12,19 @@ function drawVisualization() {
 function onGoingMDTWithCaseAgeAndSpcialization() {
   // Some raw data (not necessarily accurate)
   let data = google.visualization.arrayToDataTable([
-    ['Case Age', 'HeFPef', 'HeFRef', 'Atrial Fibrillation or Flutter', 'LVSD', 'RVSD', 'Aetiology', 'Average'],
-    ['0-2', 2, 3, 1, 4, 2, 0, 12],
-    ['3-5', 1, 1, 1, 1, 2, 0, 6],
-    ['6-10', 3, 0, 2, 2, 0, 1, 8],
-    ['11-20', 0, 1, 1, 1, 1, 0, 4],
-    ['21-30', 1, 0, 0, 0, 0, 2, 3],
-    ['31-60', 0, 0, 1, 0, 1, 0, 2],
-    ['>60', 1, 1, 1, 1, 1, 0, 5]
+    ['Case Timeline in days', 'HeFPef',	'HeFRef',	'Atrial Fibrillation or Flutter',	'Valve Clinic',	'Other Heart Failure',	'Aetiology', 'Average'],
+    ['0-2', 2,	2,	2,	1,	2,	0, 9],
+    ['3-5', 2,	2,	3,	1,	3,	0,	11],
+    ['6-10', 5,	4,	7,	12,	8,	1,	37],
+    ['11-20', 0,	3,	2,	0,	0,	0,	5],
+    ['21-30', 1,	2,	0,	0,	1,	2,	6],
+    ['31-60', 0,	0,	1,	1,	1,	0,	3],
+    ['>60', 1,	2,	0,	0,	0,	0,	3]
   ]);
 
   let options = {
     vAxis: { format: 'decimal', title: 'Number of Cases' },
-    hAxis: { title: 'Month' },
+    hAxis: { title: 'Case Timeline in days' },
     isStacked: true,
     seriesType: 'bars',
     series: { 6: { type: 'line' } }
@@ -36,18 +36,18 @@ function onGoingMDTWithCaseAgeAndSpcialization() {
 
 function onGoingMDTWithSpecializationAndPriority() {
   let data = google.visualization.arrayToDataTable([
-    ['Specialitisation', 'High Priority', 'Scheduled', 'Tagged', 'Total'],
-    ['HeFPef', 2, 7, 2, 8],
-    ['HeFRef', 1, 5, 1, 6],
-    ['Atrial Fibrillation or Flutter', 1, 3, 1, 7],
-    ['LVSD', 8, 9, 3, 9],
-    ['RVSD', 3, 4, 2, 7],
-    ['Aetiology', 0, 2, 3, 10]
+    ['Specialisation', 'High Priority', 'Scheduled', 'Tagged', 'Total'],
+    ['HeFPef', 2,	7,	2,	11],
+    ['HeFRef', 3,	10,	1,	15],
+    ['Atrial Fibrillation or Flutter', 1,	8,	1,	15],
+    ['Valve Clinic', 2,	9,	3,	15],
+    ['Other Heart Failure', 3,	7,	2,	15],
+    ['Aetiology', 0,	2,	1,	3]
   ]);
 
 
   let options = {
-    title: 'Ongoing MDT Cases',
+    // title: 'Ongoing MDT Cases',
 
     chart: {
 
@@ -69,15 +69,15 @@ function onGoingMDTWithSpecializationAndPriority() {
 function incomingMDTCasesWeekly() {
   // Some raw data (not necessarily accurate)
   let data = google.visualization.arrayToDataTable([
-    ['Week', 'HeFPef', 'HeFRef', 'Atrial Fibrillation or Flutter', 'LVSD', 'RVSD', 'Aetiology', 'Total'],
-    ['Week 1', 4, 5, 7, 2, 8, 3, 29],
-    ['Week 2', 6, 2, 4, 4, 3, 6, 25],
-    ['Week 3', 2, 6, 7, 1, 5, 3, 24],
-    ['Week 4', 8, 4, 9, 8, 1, 4, 34]
+    ['Week', 'HeFPef', 'HeFRef', 'Atrial Fibrillation or Flutter', 'Valve Clinic', 'Other Heart Failure', 'Aetiology', 'Total'],
+    ['Week 1', 4,	8,	7,	2,	4,	3,	28],
+    ['Week 2', 6,	6,	4,	4,	3,	6,	29],
+    ['Week 3', 4,	6,	7,	1,	5,	3,	26],
+    ['Week 4', 8,	9,	9,	8,	1,	4,	39]
   ]);
 
   let options = {
-    title: 'Incoming MDT Cases',
+    // title: 'Incoming MDT Cases',
     pointSize: 5,
     curveType: 'function',
     intervals: { style: 'points' },
@@ -94,16 +94,16 @@ function incomingMDTCasesWeekly() {
 
 function closeMDTCasesWeekly() {
   let data = google.visualization.arrayToDataTable([
-    ['Week', 'HeFPef', 'HeFRef', 'Atrial Fibrillation or Flutter', 'LVSD', 'RVSD', 'Aetiology', 'Total'],
-    ['Week 1', 1, 4, 2, 5, 5, 2, 19],
-    ['Week 2', 4, 2, 6, 2, 3, 4, 21],
-    ['Week 3', 2, 1, 1, 4, 1, 7, 16],
-    ['Week 4', 1, 4, 5, 8, 2, 4, 24]
+    ['Week', 'HeFPef', 'HeFRef', 'Atrial Fibrillation or Flutter', 'Valve Clinic', 'Other Heart Failure', 'Aetiology', 'Total'],
+    ['Week 1', 1,	4,	2,	5,	5,	2,	19],
+    ['Week 2', 4,	2,	6,	2,	3,	4,	21],
+    ['Week 3', 2,	1,	1,	4,	1,	7,	16],
+    ['Week 4', 1,	4,	5,	8,	2,	4,	24]
   ]);
 
 
   let options = {
-    title: 'Closed MDT Cases',
+    // title: 'Closed MDT Cases',
 
     chart: {
       subtitle: 'Categorised based on specialisation',
