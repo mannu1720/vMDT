@@ -96,13 +96,11 @@
 
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white static-top shadow">
-          <div class="logo">
-            <a href="#"><img src="img/logo.png" alt="logo"></a>
-          </div>
+          
           <!-- Sidebar Toggle (Topbar) -->
-          <!-- <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
     <i class="fa fa-bars"></i>
-  </button> -->
+  </button>
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
 
@@ -260,14 +258,9 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <!-- <h1 class="h3 mb-0 text-gray-800">MDT Cases</h1> -->
-            <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"> -->
-            <!-- <i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
-          </div>
-
+        
           <!-- Content Row -->
-          <div class="row">
+          <div class="row mt-4">
 
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-3 col-md-6 mb-4">
@@ -368,95 +361,11 @@
                   </div>
                 </div>
               </div>
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">
-                    Ongoing Caseload Categorised based on Specialisation
-                  </h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-area">
-                    <div id="onGoingMDTWithSpecializationAndPriority" style="height: inherit;width:inherit;"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">
-                    Incoming Caseload Trend
-                  </h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-area">
-                    <div id="incomingMDTCasesWeekly" style="height: inherit;width:inherit;"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">
-                    Outgoing Caseload Trend
-                  </h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-area">
-                    <div id="closeMDTCasesWeekly" style="height: inherit;width:inherit;"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">
-                    Primary Care Network
-                  </h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-area">
-                    <div id="primaryCaseNetwork" style="height: inherit;width:inherit;"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">
-                    Referral to treatment timeline
-                  </h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-area">
-                    <div id="referralToTreatmentTimeLine" style="height: inherit;width:inherit;"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">
-                    MDT Episodes
-                  </h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-area">
-                    <div id="MDTEpisodes" style="height: inherit;width:inherit;"></div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
 
             <!-- Pie Chart -->
             <div class="col-xl-4 col-lg-5">
-
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -476,54 +385,173 @@
                     </div>
                   </div> -->
                 </div>
-                <marquee direction=up>
+                <marquee id="marquee" direction=up>
                   <div class="notification_container">
                     <div class="notification">
                       <div class="notification_image">
-                        <img src=".jpg" alt="">
+                        <img src="img/clinic3.jpg" alt="">
                       </div>
                       <div class="notification_text">
                         <h6>Cardiovascular MDT</h6>
                         <label>13/05/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
                       </div>
                     </div>
-                    <div class="notification_text">
-                      <h6>Cardiovascular MDT</h6>
-                      <label>13/05/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
+                    <div class="notification">
+                      <div class="notification_image">
+                        <img src="img/clinic3.jpg" alt="">
+                      </div>
+                      <div class="notification_text">
+                        <h6>Cardiovascular MDT</h6>
+                        <label>20/05/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="notification">
-                    <div class="notification_image">
-                      <img src=".jpg" alt="">
+                    <div class="notification">
+                      <div class="notification_image">
+                        <img src="img/clinic3.jpg" alt="">
+                      </div>
+                      <div class="notification_text">
+                        <h6>Cardiovascular MDT</h6>
+                        <label>27/05/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
+                      </div>
                     </div>
-                    <div class="notification_text">
-                      <h6>Cardiovascular MDT</h6>
-                      <label>13/05/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
+                    <div class="notification">
+                      <div class="notification_image">
+                        <img src="img/clinic3.jpg" alt="">
+                      </div>
+                      <div class="notification_text">
+                        <h6>Cardiovascular MDT</h6>
+                        <label>03/06/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="notification">
-                    <div class="notification_image">
-                      <img src=".jpg" alt="">
+                    <div class="notification">
+                      <div class="notification_image">
+                        <img src="img/clinic3.jpg" alt="">
+                      </div>
+                      <div class="notification_text">
+                        <h6>Cardiovascular MDT</h6>
+                        <label>10/06/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
+                      </div>
                     </div>
-                    <div class="notification_text">
-                      <h6>Cardiovascular MDT</h6>
-                      <label>13/05/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
-                    </div>
-                  </div>
-                  <div class="notification">
-                    <div class="notification_image">
-                      <img src=".jpg" alt="">
-                    </div>
-                    <div class="notification_text">
-                      <h6>Cardiovascular MDT</h6>
-                      <label>13/05/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
-                    </div>
-                  </div>
+                  
+                  
                 </div>
+                </marquee>
               </div>
 
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">
+                    Ongoing Caseload Categorised based on Specialisation
+                  </h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <div id="onGoingMDTWithSpecializationAndPriority" style="height: inherit;width:inherit;"></div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-xl-6">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">
+                    Incoming Caseload Trend
+                  </h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <div id="incomingMDTCasesWeekly" style="height: inherit;width:inherit;"></div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-xl-6">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Outgoing Caseload Trend
+                    </h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <div id="closeMDTCasesWeekly" style="height: inherit;width:inherit;"></div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-xl-6">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Primary Care Network
+                    </h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <div id="primaryCaseNetwork" style="height: inherit;width:inherit;"></div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xl-6">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Referral to treatment timeline
+                    </h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <div id="referralToTreatmentTimeLine" style="height: inherit;width:inherit;"></div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-xl-6">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      MDT Episodes
+                    </h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <div id="MDTEpisodes" style="height: inherit;width:inherit;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+
+
         </div>
       </div>
 

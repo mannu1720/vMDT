@@ -38,6 +38,21 @@
     font-size: 14px;
 }
 .card .h5 {
-    color: #ddd !important;
-    font-size: 14px;
+    color: #fafafa !important;
+    font-size: 25px;
+}
+button#sidebarToggleTop {
+    font-size: 28px;
+    line-height: normal;
+    padding: 0;
+    height: auto;
+}
+body#page-top.sidebar-toggled #wrapper #content-wrapper {
+    width: calc(100% - 6.5rem);
+}
+.sidebar-dark .nav-item .nav-link:hover {
+    background: linear-gradient(45deg,#0fbc7e 0%,#5fdfb1 100%)!important;
+}
+#marquee{
+    max-height: 360px;
 }
