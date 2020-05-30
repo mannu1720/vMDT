@@ -388,9 +388,9 @@ h4, .h4 {
   font-size: 1.5rem;
 }
 
-h5, .h5 {
+/*h5, .h5 {
   font-size: 1.25rem;
-}
+}*/
 
 h6, .h6 {
   font-size: 1rem;
@@ -599,7 +599,7 @@ pre code {
 }
 
 .no-gutters {
-  margin-right: 0;
+/*---  margin-right: 0;---*/
   margin-left: 0;
 }
 
@@ -3627,6 +3627,9 @@ input[type="button"].btn-block {
   padding-left: 1rem;
   font-size: 1.25rem;
 }
+.nav-item span{
+  color:white
+}
 
 .custom-file {
   position: relative;
@@ -4372,10 +4375,27 @@ input[type="button"].btn-block {
 }
 
 .card-header {
+  font-weight: 700;
+  color:  #4e73df;
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   background-color: #f8f9fc;
   border-bottom: 1px solid #e3e6f0;
+}
+
+.card-body button:hover{
+  background-color:  #4e73df ;
+  color: #fdfdfe ;
+}
+
+.card-body button{
+  font-weight: 700;
+  color: #4e73df;
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 10px;
 }
 
 .card-header:first-child {
@@ -4713,10 +4733,10 @@ a.badge:hover, a.badge:focus {
   border-radius: 10rem;
 }
 
-.badge-primary {
+/*----.badge-primary {
   color: #fff;
   background-color: #4e73df;
-}
+}*/
 
 a.badge-primary:hover, a.badge-primary:focus {
   color: #fff;
@@ -5009,15 +5029,15 @@ a.badge-dark:focus, a.badge-dark.focus {
     background-position: 0 0;
   }
 }
-
-.progress {
+.h5 mb-0 mr-3 font-weight-bold text-gray-800
+/*-----.progress {
   display: flex;
   height: 1rem;
   overflow: hidden;
   font-size: 0.75rem;
   background-color: #eaecf4;
   border-radius: 0.35rem;
-}
+}*/
 
 .progress-bar {
   display: flex;
@@ -5984,7 +6004,7 @@ table.dataTable {
   padding: 10px;
   margin: 15px;
 }
-.badge-warning{
+.badge-success{
   padding: 10px;
   margin: 15px;
 }
@@ -9849,9 +9869,11 @@ a:focus {
   color: #6e707e !important;
 }
 
-.text-gray-800 {
+/*.text-gray-800 {
   color: #5a5c69 !important;
-}
+}*/
+
+
 
 .text-gray-900 {
   color: #3a3b45 !important;
