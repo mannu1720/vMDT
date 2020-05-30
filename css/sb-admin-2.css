@@ -4204,8 +4204,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-expand .navbar-nav .nav-link {
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding: 0 10px;
 }
 
 .navbar-expand > .container,
@@ -9416,7 +9415,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #4e73df !important;
+  color: #333 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9617,14 +9616,15 @@ a:focus {
 }
 
 #wrapper {
-  display: flex;
+  /* display: flex; */
 }
 
 #wrapper #content-wrapper {
   background-color: #f8f9fc;
-  width: 84%;
-  overflow-x: hidden;
-  margin-left: 225px;
+  width: calc(100% - 225px);
+  /* overflow-x: hidden; */
+  /* margin-left: 225px; */
+  float: right;
 }
 
 #wrapper #content-wrapper #content {
@@ -9726,10 +9726,10 @@ a:focus {
   /* background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%); */
   background-size: cover;
 }
-.nav-item a:hover{
+/* .nav-item a:hover{
   background-color: #20a8d8;
   color: white;
-}
+} */
 
 .bg-gradient-secondary {
   background-color: #858796;
@@ -9868,6 +9868,7 @@ a:focus {
 
 .border-left-primary {
   border-left: 0.25rem solid #4e73df !important;
+  background-image: linear-gradient(45deg,#321fdb 0%,#1f1498 100%)!important;
 }
 
 .border-bottom-primary {
@@ -9883,7 +9884,8 @@ a:focus {
 }
 
 .border-left-success {
-  border-left: 0.25rem solid #1cc88a !important;
+  border-left: 0.25rem solid #2c8add !important;
+  background: linear-gradient(45deg,#39f 0%,#2982cc 100%)!important;
 }
 
 .border-bottom-success {
@@ -9891,7 +9893,9 @@ a:focus {
 }
 
 .border-left-info {
-  border-left: 0.25rem solid #36b9cc !important;
+  border-left: 0.25rem solid #f65d5d !important;
+  background: linear-gradient(45deg,#e55353 0%,#d93737 100%)!important;
+
 }
 
 .border-bottom-info {
@@ -9900,7 +9904,10 @@ a:focus {
 
 .border-left-warning {
   border-left: 0.25rem solid #f6c23e !important;
+  background: linear-gradient(45deg,#f9b115 0%,#f6960b 100%)!important;
+
 }
+
 
 .border-bottom-warning {
   border-bottom: 0.25rem solid #f6c23e !important;
@@ -10136,8 +10143,9 @@ a:focus {
 
 .sidebar {
   overflow-x: hidden;
-  width: 6.5rem;
+  width: 225px;
   min-height: 100vh;
+  position: fixed;
 }
 
 .sidebar .nav-item {
@@ -10293,10 +10301,7 @@ a:focus {
   font-size: 0.65rem;
 }
 @media (min-width: 768px) {
-  .sidebar {
-    width: 14rem !important;
-    position: fixed;
-  }
+
   .sidebar .nav-item .collapse {
     position: relative;
     left: 0;
@@ -11125,4 +11130,15 @@ display: inline-block;
 }
 
 
+
+
+
+
+/*-----Pramod----*/
+
+
+#content nav.navbar.navbar-expand{
+  position: sticky;
+  top: 0;
+  z-index: 222;
 }
