@@ -136,7 +136,7 @@ body#page-top.sidebar-toggled #wrapper #content-wrapper {
 }
 .details label {
     font-size: 15px;
-    color: #444;
+    color: #2d2d2d;
     margin: 0;
 }
 .details span {
@@ -238,4 +238,30 @@ form.form_main label {
 .midd-content > div {
     font-size: 14px;
     margin-bottom: 5px;
+}
+
+/* start css after push code */
+.required_field .form-check-label, .required_field label {
+    /* margin-left: 21px; */
+    font-size: 14px;
+    font-size: 15px;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+.required_field input[type="checkbox"] {
+    margin-right: 6px;
+}
+.required_field .form-check {
+    padding-left: 15px;
+}
+.required_field input {
+    border-radius: 0;
+}
+.required_field h5 {
+    font-size: 18px;
+    color: #13313b;
+    text-decoration-line: underline;
+    margin-left: 15px;
+    margin-top: 10px;
 }

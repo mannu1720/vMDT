@@ -18,6 +18,8 @@
 
   <!-- Custom styles for this template -->
   <link href="css/sb-admin-2.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
 
   <!-- Custom styles for this page -->
   <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -100,25 +102,12 @@
       <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        <nav class="navbar navbar-expand navbar-light bg-white static-top shadow">
 
           <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
-
-          <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
 
@@ -129,138 +118,120 @@
                 <i class="fas fa-search fa-fw"></i>
               </a>
               <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li>
 
-            <!-- Nav Item - Alerts -->
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <i class="fas fa-bell fa-fw"></i>
-                <!-- Counter - Alerts -->
-                <span class="badge badge-danger badge-counter2">3+</span>
-              </a>
-              <!-- Dropdown - Alerts -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">
-                  Alerts Center
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-primary">
-                      <i class="fas fa-file-alt text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 12, 2019</div>
-                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                      <i class="fas fa-donate text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 7, 2019</div>
-                    $290.29 has been deposited into your account!
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-warning">
-                      <i class="fas fa-exclamation-triangle text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for your account.
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-              </div>
-            </li>
 
-            <!-- Nav Item - Messages -->
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <i class="fas fa-envelope fa-fw"></i>
-                <!-- Counter - Messages -->
-                <span class="badge badge-danger badge-counter">7</span>
-              </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
-                <h6 class="dropdown-header">
-                  Message Center
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
-                    <div class="status-indicator bg-success"></div>
-                  </div>
-                  <div class="font-weight-bold">
-                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
-                    <div class="small text-gray-500">Emily Fowler · 58m</div>
-                  </div>
+              <!-- Nav Item - Alerts -->
+              <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" title="Pending Actions" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <!-- <i class="fas fa-bell fa-fw"></i> -->
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  <!-- Counter - Alerts -->
+                  <span class="badge badge-danger badge-counter">3</span>
                 </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
-                    <div class="status-indicator"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
-                    <div class="small text-gray-500">Jae Chun · 1d</div>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
-                    <div class="status-indicator bg-warning"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
-                    <div class="status-indicator bg-success"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if
-                      they aren't good...</div>
-                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-              </div>
-            </li>
+                <!-- Dropdown - Alerts -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                  <h6 class="dropdown-header">
+                    Unread essage
+                  </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-primary">
+                        <i class="fas fa-file-alt text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">December 12, 2019</div>
+                      <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-success">
+                        <i class="fas fa-donate text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">December 7, 2019</div>
+                      $290.29 has been deposited into your account!
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-warning">
+                        <i class="fas fa-exclamation-triangle text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">December 2, 2019</div>
+                      Spending Alert: We've noticed unusually high spending for your account.
+                    </div>
+                  </a>
+                  <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                </div>
+              </li>
 
-            <div class="topbar-divider d-none d-sm-block"></div>
+              <!-- Nav Item - Messages -->
+              <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" title="Unread Messages" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-envelope fa-fw"></i>
+                  <!-- Counter - Messages -->
+                  <span class="badge badge-danger badge-counter">7</span>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                  <h6 class="dropdown-header">
+                    Message Center
+                  </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                      <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div class="font-weight-bold">
+                      <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.
+                      </div>
+                      <div class="small text-gray-500">Emily Fowler · 58m</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                      <div class="status-indicator"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                      <div class="small text-gray-500">Jae Chun · 1d</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                      <div class="status-indicator bg-warning"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                      <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                      <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even
+                        if they aren't good...</div>
+                      <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                </div>
+              </li>
 
-            <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
-              </a>
-              <!-- Dropdown - User Information -->
+              <div class="topbar-divider d-none d-sm-block"></div>
+
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -281,14 +252,12 @@
                 </a>
               </div>
             </li>
-
           </ul>
-
         </nav>
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
+        <div class="container-fluid mt-4">
 
           <!-- Page Heading 
           <h1 class="h3 mb-2 text-gray-800">Tables</h1>
@@ -301,654 +270,524 @@
             </div>
             <div class="card-body">
               <form action="">
-                <div class="card">
+                <div class="card card shadow mb-4">
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Title</h6>
+                  </div>
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-lg-4">
+                      <div class="col-lg-4 details">
                         <label for="">Name of Referrer:</label>
                         <span>Dr Jones</span>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-lg-4 details">
                         <label for="">Designation:</label>
                         <span>GP</span>
                       </div>
-                      <div class="col-lg-4">
-                        <label for="">GMC number</label>
+                      <div class="col-lg-4 details">
+                        <label for="">GMC number:</label>
                         <span>6171433</span>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-lg-4 details">
                         <label for="">Date Completed:</label>
                         <span>15-May-2020</span>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-lg-4 details">
                         <label for="">Case Number:</label>
                         <span>54127</span>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-lg-4 details">
                         <label for="">Priority:</label>
                         <span>routine</span>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-lg-4 details">
                         <label for="">Coordinator:</label>
                         <span>Dr. Majid Akram</span>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-lg-4 details">
                         <label for="">Repeat Patient:</label>
                         <span>Yes</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-body">
+              </form>
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Required <span class="text-danger">*</span></h6>
+                </div>
+                <div class="card-body required_field">
+                  <div class="row mb-3">
+                    <div class="col-lg-4 form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="" value="">MDT Case briefed
+                      </label>
+                      <input type="text" name="" id="" class="form-control">
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="" value="">Warnings Discussed
+                      </label>
+                      <input type="text" name="" id="" class="form-control">
+                    </div>
+                  </div>
+             
+                  <div>
                     <div class="row">
+                      <h5>
+                       Gone through Patients’s
+                      </h5>
+                    </div>
+                    <div class="row mb-3">
                       <div class="col-lg-4 form-check">
                         <label class="form-check-label">
-                          <input type="checkbox" class="form-check-input" value="">MDT Case briefed
+                          <input type="checkbox" class="" value="">Past Investigtions
                         </label>
-                      </div>
-                      <div class="col-lg-4 form-group">
                         <input type="text" name="" id="" class="form-control">
                       </div>
-                    </div>
-                    <div class="row">
                       <div class="col-lg-4 form-check">
                         <label class="form-check-label">
-                          <input type="checkbox" class="form-check-input" value="">Warnings Discussed
+                          <input type="checkbox" class="" value="">Observations
                         </label>
-                      </div>
-                      <div class="col-lg-4 form-group">
                         <input type="text" name="" id="" class="form-control">
                       </div>
-                    </div>
-                    <div>
-                      <div class="row">
-                        <h6>
-                          <u>Gone through Patients’s</u>
-                        </h6>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Past Investigtions
-                          </label>
-                        </div>
-                        <div class="col-lg-4 form-group">
-                          <input type="text" name="" id="" class="form-control">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Observations
-                          </label>
-                        </div>
-                        <div class="col-lg-4 form-group">
-                          <input type="text" name="" id="" class="form-control">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">History
-                          </label>
-                        </div>
-                        <div class="col-lg-4 form-group">
-                          <input type="text" name="" id="" class="form-control">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Medication
-                          </label>
-                        </div>
-                        <div class="col-lg-4 form-group">
-                          <input type="text" name="" id="" class="form-control">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Allergy
-                          </label>
-                        </div>
-                        <div class="col-lg-4 form-group">
-                          <input type="text" name="" id="" class="form-control">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Current reading
-                          </label>
-                        </div>
-                        <div class="col-lg-4 form-group">
-                          <input type="text" name="" id="" class="form-control">
-                        </div>
+                      <div class="col-lg-4 form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="" value="">History
+                        </label>
+                        <input type="text" name="" id="" class="form-control">
+
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-lg-4 form-group">
-                        <label for="">MEETING MINUTES </label>
-                        <input class="form-control" type="text" name="" id="">
+                    <div class="row mb-3">
+                      <div class="col-lg-4 form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="" value="">Medication
+                        </label>
+                        <input type="text" name="" id="" class="form-control">
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-12 form-group">
-                        <label for="">ADD ATTENDEES: </label>
-                        <span>Akram, Holroyd, Michelle
-                          <a class="btn btn-sm btn-primary" style="color: white">Add More</a>
-                        </span>
+                      <div class="col-lg-4 form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="" value="">Allergy
+                        </label>
+                        <input type="text" name="" id="" class="form-control">
                       </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header">
-                        <div class="row">
-                          <h6>
-                            <u>Actions Identified: </u>
-                          </h6>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        <div class="row">
-                          <h6>
-                            <u>Uptitrate medication: </u>
-                          </h6>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">ACEi
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">ARB
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">B blocker
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Spironolactone
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Eplerenone
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Entresto
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">DOAC
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">other
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <h6>
-                            <u>Start medication: </u>
-                          </h6>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">ACEi
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">ARB
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">B blocker
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Spironolactone
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Eplerenone
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Entresto
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">DOAC
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">other
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <h6>
-                            <u>Stop medication: </u>
-                          </h6>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">ACEi
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">ARB
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">B blocker
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Spironolactone
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Eplerenone
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Entresto
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">DOAC
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">other
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <h6>
-                            <u>Reduce medication: </u>
-                          </h6>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">ACEi
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">ARB
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">B blocker
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Spironolactone
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Eplerenone
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Entresto
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">DOAC
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">other
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-body">
-
-
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Book ECG
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Book Holter recorder
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Book echocardiogram
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Book CxR
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Book lung function test
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Order pacemaker report
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Book in clinic for Pacemaker
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">Book Outpatient face to face appointment
-                            </label>
-                          </div>
-                          <div class="col-lg-4 form-group">
-                            <input type="text" name="" id="" class="form-control">
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="row">
-                              <div class="col-lg-4 form-group">
-                                <label for="">Blood test needed</label>
-                                <input type="text" name="" id="">
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-lg-4 form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input" value="">U&E
-                                </label>
-                              </div>
-                              <div class="col-lg-4 form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input" value="">LFT
-                                </label>
-                              </div>
-                              <div class="col-lg-4 form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input" value="">FBC
-                                </label>
-                              </div>
-                              <div class="col-lg-4 form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input" value="">BNP
-                                </label>
-                              </div>
-                              <div class="col-lg-4 form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input" value="">FERRITIN
-                                </label>
-                              </div>
-                              <div class="col-lg-4 form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input" value="">Iron saturation
-                                </label>
-                              </div>
-                              <div class="col-lg-4 form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input" value="">TSH
-                                </label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-lg-4">
-                                <label for="">Follow up MDT Required: </label>
-                                <div class="form-check">
-                                  <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="optradio">Yes
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="optradio">No
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-
+                      <div class="col-lg-4 form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="" value="">Current reading
+                        </label>
+                        <input type="text" name="" id="" class="form-control">
                       </div>
                     </div>
                   </div>
+                  <div class="row mb-3">
+                    <div class="col-lg-4 form-group">
+                      <label class="ml-0" for="">Metting Minutes </label>
+                      <input class="form-control" type="text" name="" id="">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-lg-12 details">
+                      <label for="">Add  Ttendees: </label>
+                      <span>Akram, Holroyd, Michelle
+                      </span>
+                      <div>
+                        <a class="btn btn-sm btn-primary " style="color: white; cursor: pointer;">Add More</a>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="card shadow mb-4">
+                      <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Actions Identified <span class="text-danger">*</span></h6>
+                      </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <h5>Uptitrate medication
+                        </h5>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">ACEi
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">ARB
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">B blocker
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+
+
+                      <div class="row mb-3">
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Spironolactone
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Eplerenone
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Entresto
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                        <div class="row mb-3">
+                         
+                          <div class="col-lg-4 form-check">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="" value="">DOAC
+                            </label>
+                            <input type="text" name="" id="" class="form-control">
+                          </div>
+                          <div class="col-lg-4 form-check">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="" value="">other
+                            </label>
+                            <input type="text" name="" id="" class="form-control">
+                          </div>
+                        </div>
+                      
+                      
+                      <div class="row">
+                        <h5>Start medication</h5>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">ACEi
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">ARB
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">B blocker
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Spironolactone
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Eplerenone
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Entresto
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      
+                      <div class="row mb-3">
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">DOAC
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">other
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <h5>
+                          Stop medication
+                        </h5>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">ACEi
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">ARB
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">B blocker
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Spironolactone
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Eplerenone
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Entresto
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">DOAC
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">other
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+    
+                      <div class="row mb-3">
+                        <h5>Reduce medication
+                        </h5>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">ACEi
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">ARB
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">B blocker
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Spironolactone
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Eplerenone
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Entresto
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">DOAC
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">other
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <h5>Tittle here</h5>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Book ECG
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Book Holter recorder
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Book echocardiogram
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Book CxR
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Book lung function test
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Order pacemaker report
+                          </label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4 form-check">
+                          <!-- <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Book in clinic for Pacemaker
+                          </label> -->
+                        <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-lg-6 form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="" value="">Book Outpatient face to face appointment
+                          </label>
+                        <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <h5>Blood test needed</h5>
+                          </div>
+                              <div class="row">
+                                
+                                <div class="col-lg-4 form-group">
+                                  <input type="text" name="" id="" class="form-control">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-4 form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="" value="">U&E
+                                  </label>
+                                </div>
+                                <div class="col-lg-4 form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="" value="">LFT
+                                  </label>
+                                </div>
+                                <div class="col-lg-4 form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="" value="">FBC
+                                  </label>
+                                </div>
+                                <div class="col-lg-4 form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="" value="">BNP
+                                  </label>
+                                </div>
+                                <div class="col-lg-4 form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="" value="">FERRITIN
+                                  </label>
+                                </div>
+                                <div class="col-lg-4 form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="" value="">Iron saturation
+                                  </label>
+                                </div>
+                                <div class="col-lg-4 form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="" value="">TSH
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <h5>Follow up MDT Required: </h5>
+                              </div>
+                              <div class="row">
+                                
+                                <div class="col-lg-4">
+                                  <div class="form-check">
+                                    <label class="form-check-label ">
+                                      <input type="radio" class="mr-2" name="optradio">Yes
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4">
+                                  <div class="form-check">
+                                    <label class="form-check-label ">
+                                      <input type="radio" class="mr-2" name="optradio">No
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                     
+                      </div>
+                    </div>
+                  </div>
+                 
+    
+    
+                    </div>
+                    
+                  </div>
+                  
                 </div>
-              </form>
+              </div>
             </div>
           </div>
+
+          
 
         </div>
         <!-- /.container-fluid -->
