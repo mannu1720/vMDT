@@ -24,6 +24,46 @@
   <!-- Custom styles for this page -->
   <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
+
+ <style>
+   .details_head_main .details_head span {
+    color: #888;
+    font-weight: 400;
+    font-size: 13px;
+}
+.details_head_main .details_head label {
+    margin: 0;
+    margin-left: 10px;
+    color: #13303a;
+    font-weight: 400;
+    font-size: 13px;
+}
+.details_head_main {
+    width: auto;
+    display: inline-block;
+    float: right;
+}
+.details_head {
+    width: auto;
+    display: inline-block;
+}
+.customheader h6 {
+    width: auto;
+    display: inline-block;
+}
+.title {
+    font-size: 17px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+ul.details li {
+    color: #333;
+}
+ </style>
+
+
+
 </head>
 
 <body id="page-top">
@@ -261,102 +301,143 @@
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
-            <div class="card-header py-3">
+            <div class="card-header py-3 customheader">
               <h6 class="m-0 font-weight-bold text-primary">MDT Case
               </h6>
+              <div class="details_head_main">
+                <div class="details_head">
+                  <label for="">Case Number:</label>
+                  <span>54127</span>
+                </div>
+                <div class="details_head">
+                  <label for="">Date Completed:</label>
+                  <span>15-May-2020</span>
+                </div>
+                <div class="details_head">
+                  <label for="">Priority:</label>
+                  <span>routine</span>
+                </div>
+                <div class="details_head">
+                  <label for="">Case Number:</label>
+                  <span>54127</span>
+                </div>
+                <div class="details_head">
+                  <label for="">Coordinator:</label>
+                  <span>Dr. Majid Akram</span>
+                </div>
+              </div>
             </div>
             <div class="card-body">
               <div class="row">
-                <div class="col-6">
-                  <div class="card card shadow mb-4 min_height_col">
+                <div class="col-12">
+                  <div class="card card shadow mb-4">
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">Title</h6>
+                      <h6 class="m-0 font-weight-bold text-primary">Case Details</h6>
+                      
                     </div>
                     <div class="card-body">
-                      <div class="details">
-                        <label for="">Name of Referrer:</label>
-                        <span>Dr Jones</span>
-                      </div>
-                      <div class="details">
-                        <label for="">Designation:</label>
-                        <span>GP</span>
-                      </div>
-                      <div class="details">
-                        <label for="">GMC number:</label>
-                        <span>6171433</span>
-                      </div>
-                      <div class="details">
-                        <label for="">Date Completed:</label>
-                        <span>15-May-2020</span>
-                      </div>
-                      <div class="details">
-                        <label for="">Case Number:</label>
-                        <span>54127</span>
-                      </div>
-                      <div class="details">
-                        <label for="">Priority:</label>
-                        <span>routine</span>
-                      </div>
-                      <div class="details">
-                        <label for="">Coordinator:</label>
-                        <span>Dr. Majid Akram</span>
-                      </div>
-                      <div class="details">
-                        <label for="">Repeat Patient:</label>
-                        <span>Yes</span>
+                      <div class="row">
+                        <div class="col-4">
+                          <h4 class="title">Referrer</h4>
+                          <div class="details">
+                            <label for="">Name of Referrer:</label>
+                            <span>Dr Jones</span>
+                          </div>
+                          <div class="details">
+                            <label for="">Designation:</label>
+                            <span>GP</span>
+                          </div>
+                          <div class="details">
+                            <label for="">GMC number:</label>
+                            <span>6171433</span>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <h4 class="title">Speciality</h4>
+                          <div class="details">
+                            <label for="">Cardiology: </label>
+                            <span>Heart Failure with Reduced Ejection Fraction</span>
+                          </div>
+                          <div class="details">
+                            <label for="">Details of reason for referral / presenting symptoms: </label>
+                            <span>
+                              Continuing SOBOE despite 10mg Ramipril and 10mg Bisoprolol and 80mg Furosemide. NYHA 3
+                            </span>
+                          </div>
+                        </div>
+                        <!-- <div class="col-4">
+                         
+                         
+                         
+                        
+                          <div class="details">
+                            <label for="">Repeat Patient:</label>
+                            <span>Yes</span>
+                          </div>
+                        </div> -->
                       </div>
                     </div>
                   </div> 
                 </div>
-                <div class="col-6">
-                  <div class="card shadow mb-4 min_height_col">
+                <div class="col-12">
+                  <div class="card shadow mb-4">
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">Personal Details</h6>
+                      <h6 class="m-0 font-weight-bold text-primary">Patient details</h6>
+                      <div class="details_head_main">
+                        <div class="details_head">
+                          <label for="">Patient Name:</label>
+                          <span>MICKEY, Mouse (Mr)</span>
+                        </div>
+                        <div class="details_head">
+                          <label for="">NHS No:</label>
+                          <span>8887776567</span>
+                        </div>
+                      </div>
                     </div>
                     <div class="card-body">
-                      <div class="details">
-                        <label for=""> Patient’s Name: </label>
-                        <span> MICKEY, Mouse (Mr) </span>
+                      <div class="row">
+                      <div class="col-6">
+                        <h4 class="title">Personal details</h4>
+                        <div class="details">
+                          <label for="">D.O.B.: </label>
+                          <span>18-Nov-1928</span>
+                        </div>
+                        <div class="details">
+                          <label for=""> Address:</label>
+                          <span> Mickey Mouse Clubhouse London</span>
+                        </div>
+                        
+                        <div class="details">
+                          <label for=""> Home tele No:</label>
+                          <span> 01778 576880</span>
+                        </div>
+                        <div class="details">
+                          <label for=""> Mobile number:</label>
+                          <span>  07867111999</span>
+                        </div>
+                        
+                        <div class="details">
+                          <label for=""> Next Of Kin / contact details:</label>
+                          <span> Minnie mouse (Wife)</span>
+                        </div>
                       </div>
-                      <div class="details">
-                        <label for=""> Address:</label>
-                        <span> Mickey Mouse Clubhouse London</span>
-                      </div>
-                      
-                      <div class="details">
-                        <label for=""> Home tele No:</label>
-                        <span> 01778 576880</span>
-                      </div>
-                      <div class="details">
-                        <label for=""> Mobile number:</label>
-                        <span>  07867111999</span>
-                      </div>
-                      
-                      <div class="details">
-                        <label for=""> Next Of Kin / contact details:</label>
-                        <span> Minnie mouse (Wife)</span>
-                      </div>
-                      <div class="details">
-                        <label for=""> Consultant:</label>
-                        <span>NA</span>
-                      </div>
+                     
     
-                      <div class="details">
-                        <label for=""> Registered GP:</label>
-                        <span> MR Jacob Stuarts </span>
+                      <div class="col-6">
+                        <h4 class="title">GP details</h4>
+                        <div class="details">
+                          <label for=""> Registered GP:</label>
+                          <span> MR Jacob Stuarts </span>
+                        </div>
+                        <div class="details">
+                          <label for=""> Practice:</label>
+                          <span> The Knightsbridge Practice Temple Street Market Deeping Lincolnshire PE6 8QQ</span>
+                        </div>
+                        <div class="details">
+                          <label for="">Consultant:</label>
+                          <span>NA</span>
+                        </div>
                       </div>
-                      <div class="details">
-                        <label for=""> Practice:</label>
-                        <span> The Knightsbridge Practice Temple Street Market Deeping Lincolnshire PE6 8QQ</span>
-                      </div>
-    
-                      <div class="details">
-                        <label for="">D.O.B.: </label>
-                        <span>18-Nov-1928</span>
-                      </div>
-                      <div class="details">
-                        <label for="">NHS No: </label>
-                        <span>8887776567</span>
                       </div>
                     </div>
                   </div>
@@ -364,59 +445,50 @@
               </div>
               
               <div class="row">
-                <div class="col-4 ">
-                  <div class="card  shadow mb-4 min-height">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">Case Details</h6>
-                    </div>
-                    <div class="card-body">
-                      <div class="details">
-                        <label for="">Cardiology: </label>
-                        <span>Heart Failure with Reduced Ejection Fraction</span>
-                      </div>
-                      <div class="details">
-                        <label for="">Details of reason for referral / presenting symptoms: </label>
-                        <span>
-                          Continuing SOBOE despite 10mg Ramipril and 10mg Bisoprolol and 80mg Furosemide. NYHA 3
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
+                <div class="col-12">
                   <div class="card shadow mb-4 min-height">
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">Past Medical History</h6>
+                      <h6 class="m-0 font-weight-bold text-primary">History</h6>
                     </div>
-                    <!-- <div class="card-header">Past Medical History</div> -->
-                    <div class="card-body">
-                      <ul class="details">
-                        <li>Hypertension</li>
-                        <li>Type 2 Diabetes</li>
-                        <li>Gout</li>
-                        <li>Osteoporosis</li>
-                      </ul>
-                    </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-4">
+                            <h4 class="title">Medical</h4>
+                            <ul class="details">
+                              <li>Hypertension</li>
+                              <li>Type 2 Diabetes</li>
+                              <li>Gout</li>
+                              <li>Osteoporosis</li>
+                            </ul>
+                          </div>
+                          <div class="col-4">
+                            <h4 class="title">Drug</h4>
+                            <ul class="details">
+                              <li>Furosemide 80 mg in morning</li>
+                              <li>Ramipril 10mg once dialy</li>
+                              <li>Bisoprolol 10mg once daily</li>
+                              <li>Metformin 500mg Twice Daily</li>
+                              <li>Alendronic Acid 70mg weekly</li>
+                              <li>Adcal D3 two daily</li>
+                            </ul>
+                          </div>
+                          <div class="col-4">
+                            <h4 class="title">Others</h4>
+                            <div class="details">
+                              <label for="">Allergies</label>
+                              <span>Penicillin</span>
+                            </div>
+                            <div class="details">
+                              <label for="">Social Situation</label>
+                              <span>Retired, lives with wife</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
                 </div>
-                <div class="col-4">
-                  <div class="card shadow mb-4 min-height">
-                    <!-- <div class="card-header">Drug History</div> -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">Drug History</h6>
-                    </div>
-                    <div class="card-body">
-                      <ul class="details">
-                        <li>Furosemide 80 mg in morning</li>
-                        <li>Ramipril 10mg once dialy</li>
-                        <li>Bisoprolol 10mg once daily</li>
-                        <li>Metformin 500mg Twice Daily</li>
-                        <li>Alendronic Acid 70mg weekly</li>
-                        <li>Adcal D3 two daily</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+
+              
               </div>
              
         
@@ -595,19 +667,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-12 mt-4">
-                      
-                  <div class="details">
-                    <label for="">Allergies</label>
-                    <span>Penicillin</span>
-                  </div>
-                  <div class="details">
-                    <label for="">Social Situation</label>
-                    <span>Retired, lives with wife</span>
-                  </div>
-                  </div>
-              </div>
+             
             </div>
           </div>
 
