@@ -123,3 +123,87 @@ body#page-top.sidebar-toggled #wrapper #content-wrapper {
     width: 49%;
     display: inline-block;
 }
+
+/* start css by rahul */
+.cancel {
+    color: #ec6e62 !important;
+    text-align: center;
+}
+.details {
+    margin-bottom: 5px;
+}
+.details label {
+    font-size: 15px;
+    color: #444;
+    margin: 0;
+}
+.details span {
+    color: #888;
+    font-size: 14px;
+}
+ul.details li {
+    font-size: 15px;
+    color: #888;
+    line-height: 27px;
+    position: relative;
+    padding-left: 15px;
+}
+ul.details li:after {
+    width: 6px;
+    height: 6px;
+    background: #888;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    content: "";
+    border-radius: 50%;
+}
+ul.details{
+   margin:0;
+   list-style: none;
+   padding: 0;
+}
+.min-height {
+    min-height: 265px;
+}
+form.form_main label {
+    font-size: 15px;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+.form_main input, form.form_main select, form.form_main textarea {
+    border-radius: 0;
+}
+.custom-file-label{
+    border-radius: 0;
+}
+.custom-file-label::after{
+    border-radius: 0;
+}
+.clinical_details tr td {
+    color: #888 !important;
+    font-size: 13px !important;
+}
+.clinical_details th {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.saveBtn {
+    padding: 10px 30px !important;
+    width: auto !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: #4e73df !important;
+    color: white !important;
+}
+.recent {
+    font-size: 15px !important;
+}
+.min_height_col {
+    min-height: 407px;
+}
+.details h6 {
+    font-size: 14px;
+}
