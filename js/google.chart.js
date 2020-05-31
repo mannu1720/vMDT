@@ -28,7 +28,8 @@ function onGoingMDTWithCaseAgeAndSpcialization() {
     vAxis: { format: 'decimal', title: 'Number of Cases' },
     hAxis: { title: 'Case Timeline in days' },
     isStacked: true,
-    colors: ['#4EE2EC','#1271B0', '#12A6B0', '#008080', '#98AFC7', '#488AC7', '#25383C'],
+    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+    
     height: 300,
     seriesType: 'bars',
     series: { 6: { type: 'line' } }
@@ -61,7 +62,8 @@ function onGoingMDTWithSpecializationAndPriority() {
     curveType: 'function',
     vAxis: { format: 'decimal', title: 'Number of Cases' },
     hAxis: { title: 'Specialitisation', slantedText: true },
-    colors: ['#4EE2EC','#1271B0', '#12A6B0', '#008080', '#98AFC7', '#488AC7', '#25383C'],
+    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+
     seriesType: 'bars',
     series: { 3: { type: 'line' } }
   };
@@ -87,7 +89,8 @@ function incomingMDTCasesWeekly() {
     intervals: { style: 'points' },
     tooltip: { trigger: 'selection' },
     vAxis: { format: 'decimal', title: 'Number of Cases' },
-    colors: ['#4EE2EC','#1271B0', '#12A6B0', '#008080', '#98AFC7', '#488AC7', '#25383C'],
+    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+
     seriesType: 'bars',
     series: { 6: { type: 'line' } }
   };
@@ -108,7 +111,8 @@ function closeMDTCasesWeekly() {
 
   let options = {
     // title: 'Closed MDT Cases',
-    colors: ['#4EE2EC','#1271B0', '#12A6B0', '#008080', '#98AFC7', '#488AC7', '#25383C'],
+    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+
     chart: {
       subtitle: 'Categorised based on specialisation',
     },
@@ -156,7 +160,8 @@ function primaryCaseNetwork() {
     //   title: 'Primary Case Network',
     // },
     bars: 'vertical',
-    colors: ['#008080','#1271B0', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+
 
     vAxis: {
       format: 'decimal', title: 'Number of Patients'
@@ -188,7 +193,9 @@ function referralToTreatmentTimeLine() {
     title: 'Referral to treatment timeline',
     chartArea: { width: '50%' },
     isStacked: true,
-    colors: ['#4EE2EC','#1271B0', '#12A6B0', '#008080', '#98AFC7', '#488AC7', '#25383C'],
+    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+
+
 
     hAxis: {
       title: 'Treatment Timeline in days',
@@ -215,7 +222,8 @@ function MDTEpisodes() {
     // title: 'MDT Episodes',
     chartArea: { width: '50%' },
     isStacked: true,
-    colors: ['#4EE2EC', '#008080','#1271B0', '#488AC7', '#12A6B0',  '#98AFC7',  '#25383C'],
+    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+
 
     hAxis: {
       title: 'MDT Episodes',

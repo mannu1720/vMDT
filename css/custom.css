@@ -47,6 +47,10 @@ button#sidebarToggleTop {
     padding: 0;
     height: auto;
 }
+#wrapper #content-wrapper {
+
+    transition: 0.5s;
+}
 body#page-top.sidebar-toggled #wrapper #content-wrapper {
     width: calc(100% - 6.5rem);
 }
@@ -55,4 +59,49 @@ body#page-top.sidebar-toggled #wrapper #content-wrapper {
 }
 #marquee{
     max-height: 360px;
+}
+.table thead tr th {
+    background: rgba(0,0,0,0.05);
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px !important;
+    text-align: center;
+    border-color: #ddd;
+
+}
+.table tbody tr td .badge {
+    margin: 0;
+    padding: 7px 6px;
+    border-radius: 2px;
+    opacity: 0.8;
+}
+.table tbody tr td{
+    font-size: 12px;
+    border-color: #ddd;
+    color: #333;
+    cursor: pointer;
+}
+.card div.dataTables_wrapper div.dataTables_length select {
+    border-radius: 0;
+    outline: none;
+}
+.card div.dataTables_wrapper div.dataTables_filter input {
+    border-radius: 0;
+    outline: none;
+}
+
+.card .card-header button.brn {
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+.card-header h2.table-title {
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.table tbody tr:nth-child(even), .table tbody tr:hover {
+    background: rgba(0,0,0,0.02);
 }

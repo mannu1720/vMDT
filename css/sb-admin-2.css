@@ -10168,6 +10168,7 @@ a:focus {
   min-height: 100vh;
   position: fixed;
   background: linear-gradient(45deg,#102b34 0%,#15343f 100%) !important;
+  transition: 0.5s;
 }
 
 .sidebar .nav-item {
@@ -11104,7 +11105,7 @@ body.sidebar-toggled footer.sticky-footer {
 
 .notification_text h6 {
   font-size: 16px;
-  color: #444;
+  color: #293c74;
   font-weight: bold;
 }
 
