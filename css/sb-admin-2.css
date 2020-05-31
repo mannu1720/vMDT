@@ -11108,16 +11108,25 @@ body.sidebar-toggled footer.sticky-footer {
   font-size: 16px;
   color: #293c74;
   font-weight: bold;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 10px 10px;
+  box-shadow: 0 0 2px #888;
+  margin: 0;
 }
 
 .notification_text {
-  padding: 10px 15px;
+  padding: 0;
+  width: 100%;
+  display: inline-block;
+}
+.midd-content {
+  padding: 10px;
   width: 100%;
   display: inline-block;
 }
 .notification{
   padding: 0;
-  width: 94%;
+  width: 100%;
   margin: auto;
   box-shadow: 0 0 5px #999;
   background-color: white;

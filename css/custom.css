@@ -111,7 +111,9 @@ body#page-top.sidebar-toggled #wrapper #content-wrapper {
 }
 .notification_container ul {
     margin: 0;
-    padding: 0;
+    padding: 0 15px;
+    list-style: none;
+    width: 100%;
  
 }
 
@@ -122,4 +124,16 @@ body#page-top.sidebar-toggled #wrapper #content-wrapper {
 .Scheduled {
     width: 49%;
     display: inline-block;
+}
+.midd-content table{
+    width: 100%;
+}
+.midd-content table tr td {
+    border: solid 1px #ddd;
+    font-size: 14px;
+    padding: 5px;
+    color: #333;
+}
+.midd-content table tr td:first-child{
+    font-weight: bold;
 }
