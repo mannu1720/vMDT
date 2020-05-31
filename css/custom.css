@@ -137,3 +137,23 @@ body#page-top.sidebar-toggled #wrapper #content-wrapper {
 .midd-content table tr td:first-child{
     font-weight: bold;
 }
+
+.notification .card-footer {
+    padding: 8px 10px;
+}
+.notification .card-footer ul {
+    padding: 0;
+}
+.notification .card-footer ul li {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+    margin-top: 3px;
+}
+.notification .card-footer ul li:last-child{
+    float: right;
+}
+.midd-content > div {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
