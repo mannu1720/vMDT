@@ -157,3 +157,141 @@ body#page-top.sidebar-toggled #wrapper #content-wrapper {
     font-size: 14px;
     margin-bottom: 5px;
 }
+.capacity{
+    margin-top: 10px;
+}
+.capacity strong {
+    width: 80px;
+}
+.capacity .line {
+    display: inline-block;
+    width: 100%;
+}
+.gray-line {
+    display: inline-block;
+    width: 90%;
+    background: #ddd;
+    height: 10px;
+    border-radius: 50px;
+    position: relative;
+    vertical-align: middle;
+    top: -1px;
+}
+.gray-line.scheduled-line_80:after {
+    background: #0fbc7e;
+    width: 80%;
+    position: absolute;
+    left: 0;
+    content: "";
+    display: inline-block;
+    top: 0;
+    height: 10px;
+    border-radius: 50px;
+}
+.gray-line.scheduled-line_70:after {
+    background: #0fbc7e;
+    width: 70%;
+    position: absolute;
+    left: 0;
+    content: "";
+    display: inline-block;
+    top: 0;
+    height: 10px;
+    border-radius: 50px;
+}
+.gray-line.scheduled-line_50:after {
+    background: #288eb2;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    content: "";
+    display: inline-block;
+    top: 0;
+    height: 10px;
+    border-radius: 50px;
+}
+.gray-line.scheduled-line_60:after {
+    background: #288eb2;
+    width: 60%;
+    position: absolute;
+    left: 0;
+    content: "";
+    display: inline-block;
+    top: 0;
+    height: 10px;
+    border-radius: 50px;
+}
+.gray-line.scheduled-line_100:after {
+    background: #0fbc7e;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    content: "";
+    display: inline-block;
+    top: 0;
+    height: 10px;
+    border-radius: 50px;
+}
+.gray-line.scheduled-line_90:after {
+    background: #0fbc7e;
+    width: 90%;
+    position: absolute;
+    left: 0;
+    content: "";
+    display: inline-block;
+    top: 0;
+    height: 10px;
+    border-radius: 50px;
+}
+.gray-line.scheduled-line_40:after {
+    background: #ef4543;
+    width: 40%;
+    position: absolute;
+    left: 0;
+    content: "";
+    display: inline-block;
+    top: 0;
+    height: 10px;
+    border-radius: 50px;
+}
+.gray-line.scheduled-line_30:after {
+    background: #e8504f;
+    width: 30%;
+    position: absolute;
+    left: 0;
+    content: "";
+    display: inline-block;
+    top: 0;
+    height: 10px;
+    border-radius: 50px;
+}
+.gray-line.scheduled-line_20:after {
+    background: #e8504f;
+    width: 20%;
+    position: absolute;
+    left: 0;
+    content: "";
+    display: inline-block;
+    top: 0;
+    height: 10px;
+    border-radius: 50px;
+}
+.gray-line.scheduled-line_10:after {
+    background: #e8504f;
+    width: 10%;
+    position: absolute;
+    left: 0;
+    content: "";
+    display: inline-block;
+    top: 0;
+    height: 10px;
+    border-radius: 50px;
+}
+.specialisation{
+    max-width: 70%;
+    flex: 70%;
+}
+.clinics-scheduled{
+    max-width: 30%;
+    flex: 30%;
+}
