@@ -413,3 +413,33 @@ form.form_main label {
 
 /*----------------*/
 
+.btn:focus{
+    box-shadow: none;
+    outline: none;
+
+}
+
+.callendar_date {
+    margin: auto;
+    display: inline-block;
+}
+.calendar_btn_header{
+    text-align:center;
+}
+.calendar_btn_header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.event-main {
+    position: relative;
+}
+.event {
+    position: absolute;
+    height: 176px;
+    background: #3788d8;
+    left: -12px;
+    right: -12px;
+    top: -12px;
+    color: white;
+    padding: 10px;
+}

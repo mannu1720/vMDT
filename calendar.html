@@ -15,6 +15,8 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   <!-- Custom styles for this template -->
   <link href="css/sb-admin-2.css" rel="stylesheet">
@@ -214,7 +216,7 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
+        <div class="container-fluid mt-4">
 
           <!-- Page Heading 
           <h1 class="h3 mb-2 text-gray-800">Tables</h1>
@@ -228,22 +230,24 @@
               </h6>
             </div>
             <div class="card-body">
-              <div>
+              <div class="calendar_btn_header">
                 <div class="btn-group float-left" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-secondary">
-                    <</button>
-                      <button type="button" class="btn btn-secondary">></button>
+                  <button type="button" class="btn btn-secondary"> <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  </button>
+                      <button type="button" class="btn btn-secondary" style="border-left: solid 1px #999;"><i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                      </button>
                 </div>
-                <div class="btn-group">
+                <div class="btn-group float-left ml-2">
                   <button class="btn btn-secondary">today</button>
                 </div>
-                <div class="text-center">
+                <div class="callendar_date">
                   May 31 – Jun 6, 2020
                 </div>
 
                 <div class="btn-group float-right" role="group" aria-label="Basic example">
                   <button type="button" class="btn btn-secondary">Month</button>
-                  <button type="button" class="btn btn-secondary">Week</button>
+                  <button type="button" class="btn btn-secondary active">Week</button>
                   <button type="button" class="btn btn-secondary">Day</button>
                 </div>
               </div>
@@ -364,7 +368,9 @@
                   </tr>
                   <tr>
                     <td>12 pm</td>
-                    <td></td>
+                    <td> 
+                         
+                    </td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -404,7 +410,16 @@
                   </tr>
                   <tr>
                     <td>2 pm</td>
-                    <td></td>
+                    <td>
+                      <div class="event-main">
+                        <div class="event">
+                            <div class="event-header">
+                              2 PM  - 4 PM
+                              6th June, 2020
+                            </div>
+                        </div>
+                    </div>
+                    </td>
                     <td></td>
                     <td></td>
                     <td></td>
