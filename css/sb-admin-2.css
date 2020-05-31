@@ -11181,3 +11181,18 @@ display: inline-block;
 .Scheduled span {
   font-size: 13px;
 }
+
+img.img-profile.rounded-circle {
+  max-width: 40px;
+}
+.unread, .pending {
+  margin-top: 10px;
+}
+.navbar-search input{
+  border: solid 1px #ddd !important;
+}
+.navbar-search input:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}

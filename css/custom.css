@@ -267,6 +267,7 @@ form.form_main label {
     text-decoration-line: underline;
     margin-left: 15px;
     margin-top: 10px;
+}
 .capacity{
     margin-top: 10px;
 }
@@ -409,18 +410,6 @@ form.form_main label {
     border: none;
     border-radius: 3px;
 }
-img.img-profile {
-    max-width: 40px;
-    border: solid 1px #ddd;
-}
-.unread, .pending {
-    margin-top: 10px;
-}
-.navbar-search input{
-    border: solid 1px #ddd !important;
-}
-.navbar-search input:focus {
-    box-shadow: none;
-    border: none;
-    outline: none;
-}
+
+/*----------------*/
+
