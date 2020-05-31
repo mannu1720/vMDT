@@ -4382,12 +4382,12 @@ input[type="button"].btn-block {
   border-bottom: 1px solid #e3e6f0;
 }
 
-.card-body button:hover{
+/* .card-body button:hover{
   background-color:  #4e73df ;
   color: #fdfdfe ;
-}
+} */
 
-.card-body button{
+/* .card-body button{
   font-weight: 700;
   color: #4e73df;
   padding: 15px;
@@ -4395,7 +4395,7 @@ input[type="button"].btn-block {
   width: 100%;
   background-color: #fff;
   margin-top: 10px;
-}
+} */
 
 .card-header:first-child {
   border-radius: calc(0.35rem - 1px) calc(0.35rem - 1px) 0 0;

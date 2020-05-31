@@ -58,7 +58,7 @@ body#page-top.sidebar-toggled #wrapper #content-wrapper {
     width: calc(100% - 6.5rem);
 }
 .sidebar-dark .nav-item .nav-link:hover {
-    background: linear-gradient(45deg,#0fbc7e 0%,#5fdfb1 100%)!important;
+    background: linear-gradient(45deg,#408aa3 0%,#288eb2 100%)!important;
 }
 #marquee{
     max-height: 360px;
@@ -383,4 +383,19 @@ form.form_main label {
 .btn-group .btn {
     border: none;
     border-radius: 3px;
+}
+img.img-profile {
+    max-width: 40px;
+    border: solid 1px #ddd;
+}
+.unread, .pending {
+    margin-top: 10px;
+}
+.navbar-search input{
+    border: solid 1px #ddd !important;
+}
+.navbar-search input:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
 }
