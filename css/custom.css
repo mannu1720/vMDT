@@ -105,3 +105,21 @@ body#page-top.sidebar-toggled #wrapper #content-wrapper {
 .table tbody tr:nth-child(even), .table tbody tr:hover {
     background: rgba(0,0,0,0.02);
 }
+.notification_container{
+    height: 360px;
+    text-align: center;
+}
+.notification_container ul {
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.time span {
+    color: #378ba8;
+    font-size: 11px;
+}
+.Scheduled {
+    width: 49%;
+    display: inline-block;
+}

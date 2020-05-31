@@ -386,57 +386,112 @@
                     </div>
                   </div> -->
                 </div>
-                <marquee id="marquee" direction=up>
-                  <div class="notification_container">
-                    <div class="notification">
-                      <div class="notification_image">
-                        <img src="img/clinic3.jpg" alt="">
-                      </div>
-                      <div class="notification_text">
-                        <h6>Cardiovascular MDT</h6>
-                        <label>13/05/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
-                      </div>
-                    </div>
-                    <div class="notification">
-                      <div class="notification_image">
-                        <img src="img/clinic3.jpg" alt="">
-                      </div>
-                      <div class="notification_text">
-                        <h6>Cardiovascular MDT</h6>
-                        <label>20/05/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
-                      </div>
-                    </div>
-                    <div class="notification">
-                      <div class="notification_image">
-                        <img src="img/clinic3.jpg" alt="">
-                      </div>
-                      <div class="notification_text">
-                        <h6>Cardiovascular MDT</h6>
-                        <label>27/05/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
-                      </div>
-                    </div>
-                    <div class="notification">
-                      <div class="notification_image">
-                        <img src="img/clinic3.jpg" alt="">
-                      </div>
-                      <div class="notification_text">
-                        <h6>Cardiovascular MDT</h6>
-                        <label>03/06/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
-                      </div>
-                    </div>
-                    <div class="notification">
-                      <div class="notification_image">
-                        <img src="img/clinic3.jpg" alt="">
-                      </div>
-                      <div class="notification_text">
-                        <h6>Cardiovascular MDT</h6>
-                        <label>10/06/20, Morning Slot, Mix Cardiovascular Akram, Holroyd, Michelle</label>
-                      </div>
-                    </div>
 
-
-                  </div>
-                </marquee>
+                <div class="notification_container list-wrpaaer">
+                  <ul class="list-aggregate" id="marquee-vertical">
+                        <li>
+                      <div class="notification">
+                        <div class="notification_text">
+                          <h6>Cardiovascular MDT</h6>
+                          <label> Mix Cardiovascular</label>
+                          <div class="team">Akram, Holroyd, Michelle</div>
+                          <div class="patients ">
+                            <div class="Scheduled">
+                              <label>Patients Scheduled</label> <span>15</span>
+                            </div>
+                            <div class="Scheduled">
+                              <label>Patients Capacity</label> <span>0</span>
+                            </div>
+                          </div>
+                          <div class="time">
+                            <span>13/05/20, Morning </span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="notification">
+                        <div class="notification_text">
+                          <h6>Cardiovascular MDT</h6>
+                          <label> Mix Cardiovascular</label>
+                          <div class="team">Akram, Holroyd, Michelle</div>
+                          <div class="patients ">
+                            <div class="Scheduled">
+                              <label>Patients Scheduled</label> <span>15</span>
+                            </div>
+                            <div class="Scheduled">
+                              <label>Patients Capacity</label> <span>0</span>
+                            </div>
+                          </div>
+                          <div class="time">
+                            <span>13/05/20, Morning </span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="notification">
+                        <div class="notification_text">
+                          <h6>Cardiovascular MDT</h6>
+                          <label> Mix Cardiovascular</label>
+                          <div class="team">Akram, Holroyd, Michelle</div>
+                          <div class="patients ">
+                            <div class="Scheduled">
+                              <label>Patients Scheduled</label> <span>15</span>
+                            </div>
+                            <div class="Scheduled">
+                              <label>Patients Capacity</label> <span>0</span>
+                            </div>
+                          </div>
+                          <div class="time">
+                            <span>13/05/20, Morning </span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="notification">
+                        <div class="notification_text">
+                          <h6>Cardiovascular MDT</h6>
+                          <label> Mix Cardiovascular</label>
+                          <div class="team">Akram, Holroyd, Michelle</div>
+                          <div class="patients ">
+                            <div class="Scheduled">
+                              <label>Patients Scheduled</label> <span>15</span>
+                            </div>
+                            <div class="Scheduled">
+                              <label>Patients Capacity</label> <span>0</span>
+                            </div>
+                          </div>
+                          <div class="time">
+                            <span>13/05/20, Morning </span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="notification">
+                        <div class="notification_text">
+                          <h6>Cardiovascular MDT</h6>
+                          <label> Mix Cardiovascular</label>
+                          <div class="team">Akram, Holroyd, Michelle</div>
+                          <div class="patients ">
+                            <div class="Scheduled">
+                              <label>Patients Scheduled</label> <span>15</span>
+                            </div>
+                            <div class="Scheduled">
+                              <label>Patients Capacity</label> <span>0</span>
+                            </div>
+                          </div>
+                          <div class="time">
+                            <span>13/05/20, Morning </span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                
               </div>
 
             </div>
@@ -622,12 +677,16 @@
   <script src="js/jquery.marquee.js"></script>
 
 
-  <script>
-
-    $(function () {
-      $('#marquee-upcoming-mdt').marquee();
-
-    });
+  <script type="text/javascript">
+  
+    $(function(){
+  
+  
+    $('#marquee-vertical').marquee();  
+    // $('#marquee-horizontal').marquee({direction:'horizontal', delay:0, timing:50});  
+  
+  });
+  
   </script>
 </body>
 

@@ -11101,6 +11101,7 @@ body.sidebar-toggled footer.sticky-footer {
   line-height: 20px;
   /* overflow: hidden; */
   font-size: 13px;
+  margin: 0;
 }
 
 .notification_text h6 {
@@ -11111,19 +11112,19 @@ body.sidebar-toggled footer.sticky-footer {
 
 .notification_text {
   padding: 10px 15px;
-  width: calc(100% - 100px);
+  width: 100%;
   display: inline-block;
 }
 .notification{
   padding: 0;
-  width: 100%;
+  width: 94%;
   margin: auto;
   box-shadow: 0 0 5px #999;
   background-color: white;
   border-radius: 0;
   margin-bottom: 15px;
   display: inline-block;
-  float: left;
+  text-align: left;
 }
 .notification p {
   font-size: 10px;
@@ -11155,4 +11156,18 @@ display: inline-block;
   position: sticky;
   top: 0;
   z-index: 222;
+}
+
+.team, .patients, .time {
+  width: 100%;
+  display: inline-block;
+}
+.team {
+  color: #444;
+  line-height: 20px;
+  /* overflow: hidden; */
+  font-size: 13px;
+}
+.Scheduled span {
+  font-size: 13px;
 }
