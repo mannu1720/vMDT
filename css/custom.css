@@ -58,7 +58,7 @@ body#page-top.sidebar-toggled #wrapper #content-wrapper {
     width: calc(100% - 6.5rem);
 }
 .sidebar-dark .nav-item .nav-link:hover {
-    background: linear-gradient(45deg,#0fbc7e 0%,#5fdfb1 100%)!important;
+    background: linear-gradient(45deg,#408aa3 0%,#288eb2 100%)!important;
 }
 #marquee{
     max-height: 360px;
@@ -267,6 +267,7 @@ form.form_main label {
     text-decoration-line: underline;
     margin-left: 15px;
     margin-top: 10px;
+}
 .capacity{
     margin-top: 10px;
 }
@@ -409,3 +410,6 @@ form.form_main label {
     border: none;
     border-radius: 3px;
 }
+
+/*----------------*/
+
