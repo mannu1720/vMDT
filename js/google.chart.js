@@ -124,7 +124,7 @@ function closeMDTCasesWeekly() {
       title: 'Number of Cases'
     },
     hAxis: { title: 'Week' },
-    
+
     seriesType: 'bars',
     series: { 6: { type: 'line' } }
 
@@ -168,17 +168,17 @@ function primaryCaseNetwork() {
     },
     hAxis: {
       title: 'Listed Surgery',
-      slantedText: true,
-      slantedTextAngle: '90'
+      // slantedText: true,
+      // slantedTextAngle: '45'
     },
     height: 300,
-    
+
     isStacked: true
   };
 
-  let chart = new google.charts.Bar(document.getElementById('primaryCaseNetwork'));
+  let chart = new google.visualization.ColumnChart(document.getElementById('primaryCaseNetwork'));
 
-  chart.draw(data, google.charts.Bar.convertOptions(options));
+  chart.draw(data, options);
 }
 
 function referralToTreatmentTimeLine() {
