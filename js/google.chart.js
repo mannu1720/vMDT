@@ -188,14 +188,14 @@ function primaryCaseNetwork() {
 function referralToTreatmentTimeLine() {
   let data = google.visualization.arrayToDataTable([
     ['Specialization', 'Case Creation', 'Episode Scheduled', 'Episode', 'Actions Agreed', 'Actions Sent', 'Actions Closed', 'Case Closed '],
-    ['Atrial Fibrillation or Flutter', 1, 8.75, 1.75, 8.75, 8.75, 12.75, 12.75],
+    ['AF-', 1, 8.75, 1.75, 8.75, 8.75, 12.75, 12.75],
     ['HeFRef', 1, 9.05, 3, 9.05, 9.05, 14.5, 14.5],
     ['HeFPef', 1, 12.05, 2, 12.05, 12.05, 22.5, 25.5]
   ]);
 
   let options = {
     // title: 'Referral to treatment timeline',
-    chartArea: { width: '50%' },
+    chartArea: { left: '60', width: '75%' },
     isStacked: true,
     colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
 
@@ -215,7 +215,7 @@ function referralToTreatmentTimeLine() {
 
 function MDTEpisodes() {
   let data = google.visualization.arrayToDataTable([
-    ['MDT Episode', 'Atrial Fibrillation or Flutter', 'HeFRef', 'HeFPef'],
+    ['MDT Episode', 'AF-', 'HeFRef', 'HeFPef'],
     ['1', 2, 9, 3],
     ['2', 4, 8, 3],
     ['3', 5, 10, 1],
@@ -224,7 +224,7 @@ function MDTEpisodes() {
 
   let options = {
     // title: 'MDT Episodes',
-    chartArea: { width: '50%' },
+    chartArea: { left: '40', width: '70%' },
     isStacked: true,
     colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
 

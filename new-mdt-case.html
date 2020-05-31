@@ -18,6 +18,8 @@
 
   <!-- Custom styles for this template -->
   <link href="css/sb-admin-2.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
 
   <!-- Custom styles for this page -->
   <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -100,25 +102,12 @@
       <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        <nav class="navbar navbar-expand navbar-light bg-white static-top shadow">
 
           <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
-
-          <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
 
@@ -129,138 +118,120 @@
                 <i class="fas fa-search fa-fw"></i>
               </a>
               <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li>
 
-            <!-- Nav Item - Alerts -->
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <i class="fas fa-bell fa-fw"></i>
-                <!-- Counter - Alerts -->
-                <span class="badge badge-danger badge-counter2">3+</span>
-              </a>
-              <!-- Dropdown - Alerts -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">
-                  Alerts Center
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-primary">
-                      <i class="fas fa-file-alt text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 12, 2019</div>
-                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                      <i class="fas fa-donate text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 7, 2019</div>
-                    $290.29 has been deposited into your account!
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-warning">
-                      <i class="fas fa-exclamation-triangle text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for your account.
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-              </div>
-            </li>
 
-            <!-- Nav Item - Messages -->
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <i class="fas fa-envelope fa-fw"></i>
-                <!-- Counter - Messages -->
-                <span class="badge badge-danger badge-counter">7</span>
-              </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
-                <h6 class="dropdown-header">
-                  Message Center
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
-                    <div class="status-indicator bg-success"></div>
-                  </div>
-                  <div class="font-weight-bold">
-                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
-                    <div class="small text-gray-500">Emily Fowler · 58m</div>
-                  </div>
+              <!-- Nav Item - Alerts -->
+              <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" title="Pending Actions" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <!-- <i class="fas fa-bell fa-fw"></i> -->
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  <!-- Counter - Alerts -->
+                  <span class="badge badge-danger badge-counter">3</span>
                 </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
-                    <div class="status-indicator"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
-                    <div class="small text-gray-500">Jae Chun · 1d</div>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
-                    <div class="status-indicator bg-warning"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
-                    <div class="status-indicator bg-success"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if
-                      they aren't good...</div>
-                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-              </div>
-            </li>
+                <!-- Dropdown - Alerts -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                  <h6 class="dropdown-header">
+                    Unread message
+                  </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-primary">
+                        <i class="fas fa-file-alt text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">December 12, 2019</div>
+                      <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-success">
+                        <i class="fas fa-donate text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">December 7, 2019</div>
+                      $290.29 has been deposited into your account!
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-warning">
+                        <i class="fas fa-exclamation-triangle text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">December 2, 2019</div>
+                      Spending Alert: We've noticed unusually high spending for your account.
+                    </div>
+                  </a>
+                  <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                </div>
+              </li>
 
-            <div class="topbar-divider d-none d-sm-block"></div>
+              <!-- Nav Item - Messages -->
+              <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" title="Unread Messages" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-envelope fa-fw"></i>
+                  <!-- Counter - Messages -->
+                  <span class="badge badge-danger badge-counter">7</span>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                  <h6 class="dropdown-header">
+                    Message Center
+                  </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                      <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div class="font-weight-bold">
+                      <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.
+                      </div>
+                      <div class="small text-gray-500">Emily Fowler · 58m</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                      <div class="status-indicator"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                      <div class="small text-gray-500">Jae Chun · 1d</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                      <div class="status-indicator bg-warning"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                      <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                      <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even
+                        if they aren't good...</div>
+                      <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                </div>
+              </li>
 
-            <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
-              </a>
-              <!-- Dropdown - User Information -->
+              <div class="topbar-divider d-none d-sm-block"></div>
+
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -281,14 +252,12 @@
                 </a>
               </div>
             </li>
-
           </ul>
-
         </nav>
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
+        <div class="container-fluid mt-4">
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
@@ -297,276 +266,353 @@
               </h6>
             </div>
             <div class="card-body">
-              <div class="card">
-                <div class="card-body">
-                  <div>
-                    <label for="">Name of Referrer:</label>
-                    <span>Dr Jones</span>
-                  </div>
-                  <div>
-                    <label for="">Designation:</label>
-                    <span>GP</span>
-                  </div>
-                  <div>
-                    <label for="">GMC number</label>
-                    <span>6171433</span>
-                  </div>
-                  <div>
-                    <label for="">Date Completed:</label>
-                    <span>15-May-2020</span>
-                  </div>
-                  <div>
-                    <label for="">Case Number:</label>
-                    <span>54127</span>
-                  </div>
-                  <div>
-                    <label for="">Priority:</label>
-                    <span>routine</span>
-                  </div>
-                  <div>
-                    <label for="">Coordinator:</label>
-                    <span>Dr. Majid Akram</span>
-                  </div>
-                  <div>
-                    <label for="">Repeat Patient:</label>
-                    <span>Yes</span>
+              <div class="row">
+                <div class="col-6">
+                  <div class="card card shadow mb-4 min_height_col">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">Title</h6>
+                    </div>
+                    <div class="card-body">
+                      <div class="details">
+                        <label for="">Name of Referrer:</label>
+                        <span>Dr Jones</span>
+                      </div>
+                      <div class="details">
+                        <label for="">Designation:</label>
+                        <span>GP</span>
+                      </div>
+                      <div class="details">
+                        <label for="">GMC number:</label>
+                        <span>6171433</span>
+                      </div>
+                      <div class="details">
+                        <label for="">Date Completed:</label>
+                        <span>15-May-2020</span>
+                      </div>
+                      <div class="details">
+                        <label for="">Case Number:</label>
+                        <span>54127</span>
+                      </div>
+                      <div class="details">
+                        <label for="">Priority:</label>
+                        <span>routine</span>
+                      </div>
+                      <div class="details">
+                        <label for="">Coordinator:</label>
+                        <span>Dr. Majid Akram</span>
+                      </div>
+                      <div class="details">
+                        <label for="">Repeat Patient:</label>
+                        <span>Yes</span>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <div class="col-6">
+                  <div class="card shadow mb-4 min_height_col">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">Personal Details</h6>
+                    </div>
+                    <div class="card-body">
+                      <div class="details">
+                        <label for=""> Patient’s Name: </label>
+                        <span> MICKEY, Mouse (Mr) </span>
+                      </div>
+                      <div class="details">
+                        <label for=""> Address:</label>
+                        <span> Mickey Mouse Clubhouse London</span>
+                      </div>
+                      
+                      <div class="details">
+                        <label for=""> Home tele No:</label>
+                        <span> 01778 576880</span>
+                      </div>
+                      <div class="details">
+                        <label for=""> Mobile number:</label>
+                        <span>  07867111999</span>
+                      </div>
+                      
+                      <div class="details">
+                        <label for=""> Next Of Kin / contact details:</label>
+                        <span> Minnie mouse (Wife)</span>
+                      </div>
+                      <div class="details">
+                        <label for=""> Consultant:</label>
+                        <span>NA</span>
+                      </div>
+    
+                      <div class="details">
+                        <label for=""> Registered GP:</label>
+                        <span> MR Jacob Stuarts </span>
+                      </div>
+                      <div class="details">
+                        <label for=""> Practice:</label>
+                        <span> The Knightsbridge Practice Temple Street Market Deeping Lincolnshire PE6 8QQ</span>
+                      </div>
+    
+                      <div class="details">
+                        <label for="">D.O.B.: </label>
+                        <span>18-Nov-1928</span>
+                      </div>
+                      <div class="details">
+                        <label for="">NHS No: </label>
+                        <span>8887776567</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header">Personal Details</div>
-                <div class="card-body">
-                  <div>
-                    <label for=""> Patient’s Name</label>:
-                    <span> MICKEY, Mouse (Mr) </span>
+              
+              <div class="row">
+                <div class="col-4 ">
+                  <div class="card  shadow mb-4 min-height">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">Case Details</h6>
+                    </div>
+                    <div class="card-body">
+                      <div class="details">
+                        <label for="">Cardiology: </label>
+                        <span>Heart Failure with Reduced Ejection Fraction</span>
+                      </div>
+                      <div class="details">
+                        <label for="">Details of reason for referral / presenting symptoms: </label>
+                        <span>
+                          Continuing SOBOE despite 10mg Ramipril and 10mg Bisoprolol and 80mg Furosemide. NYHA 3
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <label for=""> Address</label>:
-                    <span> Mickey Mouse Clubhouse</span>
+                </div>
+                <div class="col-4">
+                  <div class="card shadow mb-4 min-height">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">Past Medical History</h6>
+                    </div>
+                    <!-- <div class="card-header">Past Medical History</div> -->
+                    <div class="card-body">
+                      <ul class="details">
+                        <li>Hypertension</li>
+                        <li>Type 2 Diabetes</li>
+                        <li>Gout</li>
+                        <li>Osteoporosis</li>
+                      </ul>
+                    </div>
                   </div>
-                  London
-                  <div>
-                    <label for=""> Home tele No</label>:
-                    <span> 01778 576880</span>
-                  </div>
-                  Mobile number 07867111999
-                  <div>
-                    <label for=""> Next Of Kin / contact details</label>:
-                    <span> Minnie mouse (Wife)</span>
-                  </div>
-                  <div>
-                    <label for=""> Consultant</label>:
-                    <span>NA</span>
-                  </div>
-
-                  <div>
-                    <label for=""> Registered GP</label>:
-                    <span> MR Jacob Stuarts </span>
-                  </div>
-                  <div>
-                    <label for=""> Practice</label>:
-                    <span> The Knightsbridge Practice Temple Street Market Deeping Lincolnshire PE6 8QQ</span>
-                  </div>
-
-                  <div>
-                    <label for="">D.O.B.: </label>
-                    <span>18-Nov-1928</span>
-                  </div>
-                  <div>
-                    <label for="">NHS No: </label>
-                    <span>8887776567</span>
+                </div>
+                <div class="col-4">
+                  <div class="card shadow mb-4 min-height">
+                    <!-- <div class="card-header">Drug History</div> -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">Drug History</h6>
+                    </div>
+                    <div class="card-body">
+                      <ul class="details">
+                        <li>Furosemide 80 mg in morning</li>
+                        <li>Ramipril 10mg once dialy</li>
+                        <li>Bisoprolol 10mg once daily</li>
+                        <li>Metformin 500mg Twice Daily</li>
+                        <li>Alendronic Acid 70mg weekly</li>
+                        <li>Adcal D3 two daily</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header">Case Details</div>
-                <div class="card-body">
-                  <div>
-                    <label for="">Cardiology: </label>
-                    <span>Heart Failure with Reduced Ejection Fraction</span>
-                  </div>
-                  <div>
-                    <label for="">Details of reason for referral / presenting symptoms: </label>
-                    <span>
-                      Continuing SOBOE despite 10mg Ramipril and 10mg Bisoprolol and 80mg Furosemide. NYHA 3
-                    </span>
+             
+        
+              <div class="row">
+                <div class="col-12">
+                  <div class="card shadow mb-4">
+                    <!-- <div class="card-header">Clinical Details</div> -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">Clinical Details</h6>
+                    </div>
+                    <div class="card-body">
+                      <div class="details">
+                        <label for="">Current Medication: </label>
+                        <span>Diuretic</span>
+                        <h6>
+                        Weight 89 kg Alcohol intake 12 units per week Respiratory Rate 20 / min Odema present
+
+                        </h6>
+                      </div>
+                      <table class="table table-bordered mb-0 clinical_details ">
+                        <thead>
+                          <th colspan="6" class="recent">Recent Investigations</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>Haemoglobin</th>
+                            <td>132</td>
+                            <th>Urea</th>
+                            <td>6.0</td>
+                            <th>Creatinine</th>
+                            <td>70</td>
+                          </tr>
+                          <tr>
+                            <th>Ferritin</th>
+                            <td>112</td>
+                            <th>BNP</th>
+                            <td>568</td>
+                            <th>eGFR</th>
+                            <td>62</td>
+                          </tr>
+                          <tr>
+                            <th>Sodium</th>
+                            <td>134</td>
+                            <th>Potassium</th>
+                            <td>4.44</td>
+                            <th>TSH</th>
+                            <td>2.7</td>
+                          </tr>
+    
+                          <tr>
+                            <th>BP systolic</th>
+                            <td>146</td>
+                            <th>BP disastolic</th>
+                            <td>88</td>
+                            <th>NYHA Score (1-4)</th>
+                            <td>3</td>
+                          </tr>
+                          <tr>
+                            <th>Pulse</th>
+                            <td>96</td>
+                            <th>BMI</th>
+                            <td>26.7</td>
+                            <th>Ejection Fraction</th>
+                            <td>34%</td>
+                          </tr>
+                          <tr>
+                            <th>O2 Sats</th>
+                            <td>96%</td>
+                            <th>Height</th>
+                            <td>170 cm</td>
+                            <th>Smoking status</th>
+                            <td>Ex smoker</td>
+                          </tr>    
+                          <tr>
+                            <th>Weight</th>
+                            <td>89 kg</td>
+                            <th>Alcohol intake</th>
+                            <td>12 units per week</td>
+                            <th></th>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th>Respiratory Rate</th>
+                            <td>20 / min</td>
+                            <th>Odema</th>
+                            <td>present</td>
+                            <th></th>
+                            <td></td>
+                          </tr>
+    
+    
+                        </tbody>
+                      </table>
+                    </div>
+                   
+                
+                   
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header">Clinical Details</div>
-                <div class="card-body">
-                  <div>
-                    <label for="">Current Medication: </label>
-                    <span>Diuretic</span>
+              
+              <div class="row">
+                <div class="col-12 ">
+                  <div class="card shadow min-height">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">Form</h6>
+                    </div>
+                    <div class="card-body">
+                      <form class="form_main">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label for="">Select file</label>
+                            <div class="custom-file">
+                              <label class="custom-file-label" for="customFile">Choose file</label>
+                              <input type="file" class="custom-file-input" id="customFile">
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label for="sel1">Select Clinic: </label>
+                              <select class="form-control" id="sel1">
+                                <option>Cardiovascular Green MDT</option>
+                                <option>Cardiovascular Yellow MDT</option>
+                                <option>Cardiovascular Blue MDT</option>
+                                <option>Cardiovascular Orange MDT</option>
+                                <option>Cardiovascular White MDT</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label for="sel1">Change Priority: </label>
+                              <select class="form-control" id="sel1">
+                                <option>Routine</option>
+                                <option>Soon</option>
+                                <option>Urgent</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label for="sel1">Tag: </label>
+                              <select class="form-control" id="sel1">
+                                <option>Interesting case</option>
+                                <option>Result awaited</option>
+                                <option>To do list</option>
+                                <option>Discuss with collegue</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label for="sel1">Change Coordinator: </label>
+                              <select class="form-control" id="sel1">
+                                <option>Ms Sharda Patel</option>
+                                <option>Mr. Nick Jones</option>
+                                <option>Dr. Richard Farrell</option>
+                                <option>Dr. Robert Dixon</option>
+                                <option>Dr. Tami Russell</option>
+                                <option>Ms Ruth Morris</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-group">
+                              <label for="">Add Notes</label>
+                              <textarea class="form-control" name="" id="" cols="30" rows="4"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="submit" class="saveBtn">Submit</button>
+                      </form>
+                    </div>
                   </div>
-                  <table class="table table-bordered">
-                    <thead>
-                      <th colspan="6">Recent Investigations</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>Haemoglobin</th>
-                        <td>132</td>
-                        <th>Urea</th>
-                        <td>6.0</td>
-                        <th>Creatinine</th>
-                        <td>70</td>
-                      </tr>
-                      <tr>
-                        <th>Ferritin</th>
-                        <td>112</td>
-                        <th>BNP</th>
-                        <td>568</td>
-                        <th>eGFR</th>
-                        <td>62</td>
-                      </tr>
-                      <tr>
-                        <th>Sodium</th>
-                        <td>134</td>
-                        <th>Potassium</th>
-                        <td>4.44</td>
-                        <th>TSH</th>
-                        <td>2.7</td>
-                      </tr>
-
-                      <tr>
-                        <th>BP systolic</th>
-                        <td>146</td>
-                        <th>BP disastolic</th>
-                        <td>88</td>
-                        <th>NYHA Score (1-4)</th>
-                        <td>3</td>
-                      </tr>
-                      <tr>
-                        <th>Pulse</th>
-                        <td>96</td>
-                        <th>BMI</th>
-                        <td>26.7</td>
-                        <th>Ejection Fraction</th>
-                        <td>34%</td>
-                      </tr>
-                      <tr>
-                        <th>O2 Sats</th>
-                        <td>96%</td>
-                        <th>Height</th>
-                        <td>170 cm</td>
-                        <th>Smoking status</th>
-                        <td>Ex smoker</td>
-                      </tr>
-                      Weight 89 kg Alcohol intake 12 units per week Respiratory Rate 20 / min Odema present
-
-                      <tr>
-                        <th>Weight</th>
-                        <td>89 kg</td>
-                        <th>Alcohol intake</th>
-                        <td>12 units per week</td>
-                        <th></th>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <th>Respiratory Rate</th>
-                        <td>20 / min</td>
-                        <th>Odema</th>
-                        <td>present</td>
-                        <th></th>
-                        <td></td>
-                      </tr>
-
-
-                    </tbody>
-                  </table>
-                </div>
-                <div class="card">
-                  <div class="card-header">Past Medical History</div>
-                  <div class="card-body">
-                    <ul>
-                      <li>Hypertension</li>
-                      <li>Type 2 Diabetes</li>
-                      <li>Gout</li>
-                      <li>Osteoporosis</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">Drug History</div>
-                  <div class="card-body">
-                    <ul>
-                      <li>Furosemide 80 mg in morning</li>
-                      <li>Ramipril 10mg once dialy</li>
-                      <li>Bisoprolol 10mg once daily</li>
-                      <li>Metformin 500mg Twice Daily</li>
-                      <li>Alendronic Acid 70mg weekly</li>
-                      <li>Adcal D3 two daily</li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <label for="">Allergies</label>
-                  <span>Penicillin</span>
-                </div>
-                <div>
-                  <label for="">Social Situation</label>
-                  <span>Retired, lives with wife</span>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-body">
-                  <form>
-                    <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="customFile">
-                      <label class="custom-file-label" for="customFile">Choose file</label>
-                    </div>
-                    <div class="form-group">
-                      <label for="sel1">Select Clinic: </label>
-                      <select class="form-control" id="sel1">
-                        <option>Cardiovascular Green MDT</option>
-                        <option>Cardiovascular Yellow MDT</option>
-                        <option>Cardiovascular Blue MDT</option>
-                        <option>Cardiovascular Orange MDT</option>
-                        <option>Cardiovascular White MDT</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="sel1">Change Priority: </label>
-                      <select class="form-control" id="sel1">
-                        <option>Routine</option>
-                        <option>Soon</option>
-                        <option>Urgent</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="sel1">Tag: </label>
-                      <select class="form-control" id="sel1">
-                        <option>Interesting case</option>
-                        <option>Result awaited</option>
-                        <option>To do list</option>
-                        <option>Discuss with collegue</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="sel1">Change Coordinator: </label>
-                      <select class="form-control" id="sel1">
-                        <option>Ms Sharda Patel</option>
-                        <option>Mr. Nick Jones</option>
-                        <option>Dr. Richard Farrell</option>
-                        <option>Dr. Robert Dixon</option>
-                        <option>Dr. Tami Russell</option>
-                        <option>Ms Ruth Morris</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="">Add Notes</label>
-                      <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
-                    </div>
-                    <button type="submit">Submit</button>
-                  </form>
-                </div>
+              <div class="row">
+                <div class="col-12 mt-4">
+                      
+                  <div class="details">
+                    <label for="">Allergies</label>
+                    <span>Penicillin</span>
+                  </div>
+                  <div class="details">
+                    <label for="">Social Situation</label>
+                    <span>Retired, lives with wife</span>
+                  </div>
+                  </div>
               </div>
             </div>
           </div>
 
         </div>
+     
         <!-- /.container-fluid -->
 
       </div>
