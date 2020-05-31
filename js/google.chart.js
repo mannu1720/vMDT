@@ -16,11 +16,11 @@ function onGoingMDTWithCaseAgeAndSpcialization() {
   let data = google.visualization.arrayToDataTable([
     ['Case Timeline in days', 'HeFPef', 'HeFRef', 'Atrial Fibrillation or Flutter', 'Valve Clinic', 'Other Heart Failure', 'Aetiology', 'Average'],
     ['0-2', 2, 2, 2, 1, 2, 0, 9],
-    ['3-5', 2, 2, 3, 1, 3, 0, 11],
-    ['6-10', 3, 2, 6, 8, 6, 1, 26],
-    ['11-20', 2, 4, 3, 4, 2, 0, 15],
+    ['3-5', 2, 2, 3, 3, 4, 0, 14],
+    ['6-10', 2, 1, 6, 5, 5, 1, 20],
+    ['11-20', 2, 5, 3, 4, 2, 0, 16],
     ['21-30', 1, 2, 0, 0, 1, 2, 6],
-    ['31-60', 0, 0, 1, 1, 1, 0, 3],
+    ['31-60', 1, 0, 1, 1, 1, 0, 4],
     ['>60', 1, 2, 0, 0, 0, 0, 3]
   ]);
 
