@@ -17,8 +17,8 @@ function onGoingMDTWithCaseAgeAndSpcialization() {
     ['Case Timeline in days', 'HeFPef', 'HeFRef', 'Atrial Fibrillation or Flutter', 'Valve Clinic', 'Other Heart Failure', 'Aetiology', 'Average'],
     ['0-2', 2, 2, 2, 1, 2, 0, 9],
     ['3-5', 2, 2, 3, 1, 3, 0, 11],
-    ['6-10', 5, 4, 7, 12, 8, 1, 37],
-    ['11-20', 0, 3, 2, 0, 0, 0, 5],
+    ['6-10', 3, 2, 6, 8, 6, 1, 26],
+    ['11-20', 2, 4, 3, 4, 2, 0, 15],
     ['21-30', 1, 2, 0, 0, 1, 2, 6],
     ['31-60', 0, 0, 1, 1, 1, 0, 3],
     ['>60', 1, 2, 0, 0, 0, 0, 3]
@@ -28,8 +28,10 @@ function onGoingMDTWithCaseAgeAndSpcialization() {
     vAxis: { format: 'decimal', title: 'Number of Cases' },
     hAxis: { title: 'Case Timeline in days' },
     isStacked: true,
-    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
-    
+    chartArea: { left: 50, width: '80%', bottom: 50, top: 20 },
+    pointSize: 5,
+    colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+
     height: 300,
     seriesType: 'bars',
     series: { 6: { type: 'line' } }
@@ -62,7 +64,7 @@ function onGoingMDTWithSpecializationAndPriority() {
     curveType: 'function',
     vAxis: { format: 'decimal', title: 'Number of Cases' },
     hAxis: { title: 'Specialitisation', slantedText: true },
-    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+    colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
 
     seriesType: 'bars',
     series: { 3: { type: 'line' } }
@@ -83,14 +85,15 @@ function incomingMDTCasesWeekly() {
   ]);
 
   let options = {
-    // title: 'Incoming MDT Cases',
+    title: 'Incoming',
     pointSize: 5,
     curveType: 'function',
     intervals: { style: 'points' },
     tooltip: { trigger: 'selection' },
     vAxis: { format: 'decimal', title: 'Number of Cases' },
-    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
-
+    colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+    legend: { position: 'none' },
+    chartArea: { left: 50, right: 0 },
     seriesType: 'bars',
     series: { 6: { type: 'line' } }
   };
@@ -110,8 +113,8 @@ function closeMDTCasesWeekly() {
 
 
   let options = {
-    // title: 'Closed MDT Cases',
-    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+    title: 'Outgoing',
+    colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
 
     chart: {
       subtitle: 'Categorised based on specialisation',
@@ -121,10 +124,10 @@ function closeMDTCasesWeekly() {
 
     vAxis: {
       format: 'decimal',
-      title: 'Number of Cases'
+      // title: 'Number of Cases'
     },
-    hAxis: { title: 'Week' },
-
+    // hAxis: { title: 'Week' },
+    chartArea: { left: 20 },
     seriesType: 'bars',
     series: { 6: { type: 'line' } }
 
@@ -159,17 +162,18 @@ function primaryCaseNetwork() {
     // chart: {
     //   title: 'Primary Case Network',
     // },
+    chartArea: { left: '100', width: '100%', right: '0', bottom: 90, top: 40 },
     bars: 'vertical',
-    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
-
+    colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+    legend: { position: 'top' },
 
     vAxis: {
       format: 'decimal', title: 'Number of Patients'
     },
     hAxis: {
       title: 'Listed Surgery',
-      // slantedText: true,
-      // slantedTextAngle: '45'
+      slantedText: true,
+      slantedTextAngle: '20'
     },
     height: 300,
 
@@ -185,15 +189,15 @@ function referralToTreatmentTimeLine() {
   let data = google.visualization.arrayToDataTable([
     ['Specialization', 'Case Creation', 'Episode Scheduled', 'Episode', 'Actions Agreed', 'Actions Sent', 'Actions Closed', 'Case Closed '],
     ['Atrial Fibrillation or Flutter', 1, 8.75, 1.75, 8.75, 8.75, 12.75, 12.75],
-    ['HeFRef - Heart Failure with Reduced Ejection Fraction', 1, 9.05, 3, 9.05, 9.05, 14.5, 14.5],
-    ['HeFPef - Heart Failure with Preserved Ejection Fraction', 1, 12.05, 2, 12.05, 12.05, 22.5, 25.5]
+    ['HeFRef', 1, 9.05, 3, 9.05, 9.05, 14.5, 14.5],
+    ['HeFPef', 1, 12.05, 2, 12.05, 12.05, 22.5, 25.5]
   ]);
 
   let options = {
-    title: 'Referral to treatment timeline',
+    // title: 'Referral to treatment timeline',
     chartArea: { width: '50%' },
     isStacked: true,
-    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+    colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
 
 
 
@@ -211,7 +215,7 @@ function referralToTreatmentTimeLine() {
 
 function MDTEpisodes() {
   let data = google.visualization.arrayToDataTable([
-    ['MDT Episode', 'Atrial Fibrillation or Flutter', 'HeFRef - Heart Failure with Reduced Ejection Fraction', 'HeFPef - Heart Failure with Preserved Ejection Fraction'],
+    ['MDT Episode', 'Atrial Fibrillation or Flutter', 'HeFRef', 'HeFPef'],
     ['1', 2, 9, 3],
     ['2', 4, 8, 3],
     ['3', 5, 10, 1],
@@ -222,7 +226,7 @@ function MDTEpisodes() {
     // title: 'MDT Episodes',
     chartArea: { width: '50%' },
     isStacked: true,
-    colors: ['#5fdfb1','#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+    colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
 
 
     hAxis: {
