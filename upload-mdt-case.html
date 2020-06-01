@@ -106,6 +106,77 @@ ul.details li {
     position: relative;
     top: -2px;
 }
+.success {
+    width: 100%;
+    display: inline-block;
+}
+.success_icon {
+    width: 100%;
+    height: 150px;
+    background: #3fc59d;
+    display: inline-block;
+    text-align: center;
+    line-height: 150px;
+}
+.success_icon img {
+    max-width: 70px;
+    margin: auto;
+}
+.success_text {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.success_text h3 {
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #333;
+}
+.success_text p {
+    color: #444;
+    font-weight: 700;
+    font-size: 14px;
+}
+.created_popup_container {
+  max-width: 500px;
+    margin: auto;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.success_text span {
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline-block;
+}
+.proceed {
+    background: #05aece;
+    border: 0 currentColor;
+    color: white;
+    padding: 5px 20px;
+    /* margin: auto; */
+    border-radius: 2px;
+    font-size: 14px;
+}
+.file_content textarea {
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+.file_content input {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 7px;
+    margin-top: 7px;
+}
+.file_content textarea {
+    width: 100%;
+    height: 96px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
  </style>
 
 
@@ -655,11 +726,15 @@ ul.details li {
                       <form class="form_main">
                         <div class="row">
                           <div class="col-6">
-                            <div class="form-group">
+                            <div class="form-group mb-0">
                               <label for="">Upload Documents</label>
                             <div class="custom-file">
                               <label class="custom-file-label" for="customFile">Choose file</label>
                               <input type="file" class="custom-file-input" id="customFile">
+                            </div>
+                            <div class="file_content">
+                              <input type="text" placeholder="Title">
+                              <textarea name="" id="" cols="30" rows="10" placeholder="Destruction"></textarea>
                             </div>
                             </div>
                           </div>
@@ -676,40 +751,47 @@ ul.details li {
                             </div>
                           </div> -->
                           <div class="col-6">
-                            <div class="form-group">
-                              <label for="sel1">Change Priority: </label>
-                              <select class="form-control" id="sel1">
-                                <option>Routine</option>
-                                <option>Soon</option>
-                                <option>Urgent</option>
-                              </select>
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="form-group">
+                                  <label for="sel1">Change Priority: </label>
+                                  <select class="form-control" id="sel1">
+                                    <option>Routine</option>
+                                    <option>Soon</option>
+                                    <option>Urgent</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-group">
+                                  <label for="sel1">Tag: </label>
+                                  <select class="form-control" id="sel1">
+                                    <option></option>
+                                    <option>Interesting case</option>
+                                    <option>Result awaited</option>
+                                    <option>To do list</option>
+                                    <option>Discuss with colleague</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-group">
+                                  <label for="sel1">Change Coordinator: </label>
+                                  <select class="form-control" id="sel1">
+                                    <option>Ms Sharda Patel</option>
+                                    <option>Mr. Nick Jones</option>
+                                    <option>Dr. Richard Farrell</option>
+                                    <option>Dr. Robert Dixon</option>
+                                    <option>Dr. Tami Russell</option>
+                                    <option>Ms Ruth Morris</option>
+                                  </select>
+                                </div>
+                              </div>
                             </div>
+                         
                           </div>
-                          <div class="col-6">
-                            <div class="form-group">
-                              <label for="sel1">Tag: </label>
-                              <select class="form-control" id="sel1">
-                                <option></option>
-                                <option>Interesting case</option>
-                                <option>Result awaited</option>
-                                <option>To do list</option>
-                                <option>Discuss with colleague</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-6">
-                            <div class="form-group">
-                              <label for="sel1">Change Coordinator: </label>
-                              <select class="form-control" id="sel1">
-                                <option>Ms Sharda Patel</option>
-                                <option>Mr. Nick Jones</option>
-                                <option>Dr. Richard Farrell</option>
-                                <option>Dr. Robert Dixon</option>
-                                <option>Dr. Tami Russell</option>
-                                <option>Ms Ruth Morris</option>
-                              </select>
-                            </div>
-                          </div>
+                          
+                          
                           <div class="col-12">
                             <div class="form-group">
                               <label for="">Add Notes</label>
@@ -717,7 +799,8 @@ ul.details li {
                             </div>
                           </div>
                         </div>
-                        <button type="submit" class="saveBtn" style="background-color: #05aece !important;">Submit</button>
+                        <!-- <button type="submit" class="saveBtn" style="background-color: #05aece !important;" data-toggle="modal" data-target="#newMdtModal5">Submit</button> -->
+                        <a  class="saveBtn mt-2" style="background-color: #05aece !important; text-decoration: none; display: inline-block;" href="javascript:avoid" data-toggle="modal" data-target="#newMdtModal5">Submit</a>
                       </form>
                     </div>
                   </div>
@@ -774,6 +857,40 @@ ul.details li {
     </div>
   </div>
 
+  <!-- success popup -->
+  <div class="modal fade" id="newMdtModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content created_popup_container">
+        <!-- <div class="modal-header custom_header">
+          <h5 class="modal-title" id="exampleModalLabel">Create MDT Case</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div> -->
+        <div class="modal-body p-0">
+          <div class="success">
+            <div class="success_icon">
+              <img src="img/success.png" alt="">
+            </div>
+            <div class="success_text">
+              <h3>Great</h3>
+              <p>MDT Case <span>54127</span> has been Created successfully </p>
+            </div>
+          </div>
+        
+        </div>
+        <div class="modal-footer">
+          <!-- <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button> -->
+          <button class="proceed" data-dismiss="modal">Okay</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
