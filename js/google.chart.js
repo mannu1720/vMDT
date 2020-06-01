@@ -114,7 +114,7 @@ function closeMDTCasesWeekly() {
 
 
   let options = {
-    title: 'Outgoing',
+    title: 'Completed',
     colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
 
     chart: {
@@ -172,7 +172,7 @@ function primaryCaseNetwork() {
       format: 'decimal', title: 'Number of Patients'
     },
     hAxis: {
-      title: 'Listed Surgery',
+      title: 'General Practice Name',
       slantedText: true,
       slantedTextAngle: '20'
     },
@@ -195,7 +195,7 @@ function referralToTreatmentTimeLine() {
   ]);
 
   let options = {
-    // title: 'Referral to treatment timeline',
+    title: 'Timeline for each MDT action',
     chartArea: { left: '60', width: '70%' },
     // isStacked: true,
     colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
@@ -220,11 +220,12 @@ function MDTEpisodes() {
     ['1', 2, 9, 3],
     ['2', 4, 8, 3],
     ['3', 5, 10, 1],
-    ['4', 3, 9, 3]
+    ['4', 3, 9, 3],
+    ['>4', 2, 5, 2]
   ]);
 
   let options = {
-    // title: 'MDT Episodes',
+    title: 'MDT episodes per case by subspeciality',
     chartArea: { left: '40', width: '70%' },
     isStacked: true,
     colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
