@@ -414,7 +414,7 @@ form.form_main label {
 /*----------------*/
 
 .btn:focus{
-    box-shadow: none;
+    box-shadow: none !important;
     outline: none;
 
 }
@@ -455,7 +455,7 @@ form.form_main label {
     border-left: solid 0.25rem #12a6b0 !important;
 }
 button.btn.month {
-    border: solid 1px rgba(221, 221, 221, 0.45098039215686275);
+    border: solid 1px rgba(221, 221, 221, 0.7);
     margin-right: 10px;
     padding: 0 0px 0 10px;
 }
@@ -482,4 +482,13 @@ button.btn.month i.fa.fa-angle-down {
     display: inline-block;
     font-size: 18px;
 }
-
+.custom-btn-color{
+    background: linear-gradient(45deg,#408aa3 0%,#288eb2 100%)!important;
+}
+.navbar-search .btn{
+    background: linear-gradient(45deg,#408aa3 0%,#288eb2 100%)!important;
+}
+button.btn.btn-primary.custom-btn-color.active {
+    background: #185064 !important;
+    border-radius: 3px 0 0px 3px;
+}
