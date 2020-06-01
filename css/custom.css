@@ -631,3 +631,13 @@ div#myModal .modal-body .add-field label{
     width: 140px;
     display: inline-block;
 }
+.event-details > ul {
+    max-height: 170px;
+    min-height: 170px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+}
+.mdt-cases ul li {
+    cursor: pointer;
+}
