@@ -513,15 +513,16 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header custom_header">
-          <h5 class="modal-title" id="exampleModalLabel">How do you want to create</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Create MDT Case</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
         <div class="modal-body">
-          <div class="form-check">
-            <label class="form-check-label uploadfilet">
-              <input type="checkbox" class="form-check-input " value="upload" id="upload" checked>Upload Refferal Form
+          <div class="form-check custom_check">
+            <input type="checkbox" class="form-check-input " value="upload" id="upload" checked>
+            <label class="form-check-label uploadfilet" for="upload">
+              Upload Referral Form
             </label>
           </div>
           <form>
@@ -533,9 +534,10 @@
               </label>
             </div>
           </form>
-          <div class="form-check">
-            <label class="form-check-label uploadfilet mb-0">
-              <input type="checkbox" class="form-check-input" value="mannual" id="mannual">Fill Refferal Form Manually
+          <div class="form-check custom_check">
+            <input type="checkbox" class="form-check-input" value="mannual" id="mannual">
+            <label class="form-check-label uploadfilet mb-0" for="mannual">
+              Manually
             </label>
           </div>
         </div>

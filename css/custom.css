@@ -262,12 +262,13 @@ form.form_main label {
     border-radius: 0;
 }
 .required_field h5 {
-    font-size: 18px;
+    font-size: 15px;
     color: #13313b;
     text-decoration-line: underline;
     margin-left: 15px;
     margin-top: 10px;
-}
+    font-weight: 600;
+}   
 .capacity{
     margin-top: 10px;
 }
@@ -494,6 +495,41 @@ button.btn.month i.fa.fa-angle-down {
 button.btn.btn-primary.custom-btn-color.active {
     background: #185064 !important;
     border-radius: 3px 0 0px 3px;
+}
+
+.custom_check {
+    position: relative;
+}
+.custom_check label:after {
+    width: 17px;
+    height: 17px;
+    border: 2px solid #05aece;
+    border-radius: 0;
+    content: "";
+    top: 3px;
+    left: 0;
+    /* background: green; */
+    position: absolute;
+}
+.custom_check input[type="checkbox"]:checked + label:after {
+    background: #05aece;
+    content: "\f00c";
+    font-family: FontAwesome;
+    color: white;
+    font-weight: 100;
+    line-height: 14px;
+    font-size: 12px;
+    text-align: center;
+}
+.custom_check input{
+    position: absolute;
+    z-index: 9;
+    opacity: 0;
+    width: 18px;
+    height: 18px;
+}
+.custom_check label{
+   margin-left: 6px;
 }
 .calendar_main .table tbody tr:nth-child(even) td {
     border-bottom-style: dotted;
