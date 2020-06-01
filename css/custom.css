@@ -49,6 +49,7 @@ button#sidebarToggleTop {
     line-height: normal;
     padding: 0;
     height: auto;
+    color: #102b34;
 }
 #wrapper #content-wrapper {
 
@@ -487,10 +488,10 @@ button.btn.month i.fa.fa-angle-down {
     font-size: 18px;
 }
 .custom-btn-color{
-    background: linear-gradient(45deg,#408aa3 0%,#288eb2 100%)!important;
+    background: linear-gradient(45deg,#102b34 0%,#15343f 100%) !important;
 }
 .navbar-search .btn{
-    background: linear-gradient(45deg,#408aa3 0%,#288eb2 100%)!important;
+    background: linear-gradient(45deg,#102b34 0%,#15343f 100%) !important;
 }
 button.btn.btn-primary.custom-btn-color.active {
     background: #185064 !important;
@@ -600,4 +601,17 @@ div#myModal2 .modal-body h4{
     padding: 2px 0 !important;
     margin: 0 !important;
     color: #fff !important;
+}
+div#myModal .modal-body .add-field input, div#myModal .modal-body .add-field select {
+    width: calc(100% - 150px);
+    height: 35px;
+    border: solid 1px #ddd;
+    padding: 5px 10px;
+}
+div#myModal .modal-body .add-field{
+    margin-bottom: 10px;
+}
+div#myModal .modal-body .add-field label{
+    width: 140px;
+    display: inline-block;
 }
