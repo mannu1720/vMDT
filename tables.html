@@ -84,6 +84,30 @@
     border-radius: 2px;
     font-size: 14px;
 }
+.table tbody tr:nth-child(even){
+    background: white;
+}
+
+.thmbg {
+    background: #096890;
+    color: white !important;
+}
+.badge-success{
+  color:white !important;
+}
+table tr td span {
+    display: block;
+    color: #888;
+    font-size: 11px;
+}
+table{
+  text-align: center;
+}
+#dataTable_info {
+    font-size: 15px;
+    color: #333;
+    text-transform: none;
+}
   </style>
 
 </head>
@@ -96,72 +120,73 @@
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
       <a class="logo" href="index.html">
-        <img src="img/logo.png" alt="">
+        <img src="img/logo_2.png">
       </a>
-    <hr class="sidebar-divider d-none d-md-block">
-    
-    <!-- Nav Item - Charts -->
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">
-        <i class="fas fa-fw fa-chart-area"></i>
-        <span>Dashboard</span>
-      </a>
-    </li>
-    <hr class="sidebar-divider d-none d-md-block">
-    <!--Nav Item - Profile-->
-    <li class="nav-item">
-      <a class="nav-link" href="profile.html">
-        <i class="fas fa-user-alt"></i>
-        <span>Profile</span>
-      </a>
-    </li>
-    <hr class="sidebar-divider d-none d-md-block">
-    <!---Nav Item - Clinics-->
-    <li class="nav-item">
-      <a class="nav-link" href="clinics.html">
-        <i class="fa fa-medkit" aria-hidden="true"></i>
-        <span>Clinics</span>
-      </a>
-    </li>
-    <hr class="sidebar-divider d-none d-md-block">
-    <!---Nav Item - MDT case-->
-    <li class="nav-item">
-      <a class="nav-link" href="tables.html">
-        <i class="fa fa-user-md" aria-hidden="true"></i>
-        <span>MDT Case</span>
-      </a>
-    </li>
-    <hr class="sidebar-divider d-none d-md-block">
+      <hr class="sidebar-divider d-none d-md-block">
 
-    <!-- Nav Item - Calendar -->
-    <li class="nav-item">
-      <a class="nav-link" href="calendar.html">
-        <i class="far fa-calendar-alt"></i>
-        <span>Calendar</span>
-      </a>
-    </li>
-    <hr class="sidebar-divider d-none d-md-block">
-    <!-- Nav Item - Messenger -->
-    <li class="nav-item">
-      <a class="nav-link" href="messenger.html">
-        <i class="fab fa-facebook-messenger"></i>
-        <span>Messenger</span>
-      </a>
-    </li>
-    <hr class="sidebar-divider d-none d-md-block">
-    <!--Nav Iteam - Reports-->
-    <li class="nav-item">
-      <a class="nav-link" href="report.html">
-        <i class="fas fa-file-medical"></i>
-        <span>Reports</span>
-      </a>
-    </li>
-    <hr class="sidebar-divider d-none d-md-block">
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <hr class="sidebar-divider d-none d-md-block">
+      <!--Nav Item - Profile-->
+      <li class="nav-item">
+        <a class="nav-link" href="profile.html">
+          <i class="fas fa-user-alt"></i>
+          <span>Profile</span>
+        </a>
+      </li>
+      <hr class="sidebar-divider d-none d-md-block">
+      <!---Nav Item - Clinics-->
+      <li class="nav-item">
+        <a class="nav-link" href="scheduled.html">
+          <i class="far fa-calendar-alt"></i>
+          
+          <span>Scheduled</span>
+        </a>
+      </li>
+      <hr class="sidebar-divider d-none d-md-block">
+      <!---Nav Item - MDT case-->
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          <i class="fa fa-user-md" aria-hidden="true"></i>
+          <span>MDT Case</span>
+        </a>
+      </li>
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Nav Item - Calendar -->
+      <li class="nav-item">
+        <a class="nav-link" href="calendar.html">
+          <i class="fa fa-medkit" aria-hidden="true"></i>
+          <span>Clinics</span>
+        </a>
+      </li>
+      <hr class="sidebar-divider d-none d-md-block">
+      <!-- Nav Item - Messenger -->
+      <li class="nav-item">
+        <a class="nav-link" href="messenger.html">
+          <i class="fab fa-facebook-messenger"></i>
+          <span>Messenger</span>
+        </a>
+      </li>
+      <hr class="sidebar-divider d-none d-md-block">
+      <!--Nav Iteam - Reports-->
+      <li class="nav-item">
+        <a class="nav-link" href="report.html">
+          <i class="fas fa-file-medical"></i>
+          <span>Reports</span>
+        </a>
+      </li>
+      <hr class="sidebar-divider d-none d-md-block">
 
 
-  </ul>
+    </ul>
 
-  <!-- Sidebar End-->
+    <!-- Sidebar End-->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -311,25 +336,25 @@
                   </thead>
                   <tbody>
                     <tr class="clickable-row" data-href='new-mdt-case.html'>
-                      <td>Adam smith 1234 5678 90</td>
+                      <td>Adam smith <span>1234 5678 90</span></td>
                       <td>66 M</td>
-                      <td>Dr Jones (Green surgery)</td>
+                      <td>Dr Jones <span>(Green surgery)</span></td>
                       <td>25/04/20</td>
                       <td>SOB on exertion NYHA 3</td>
                       <!-- <td></td> -->
                       <td>HeFPef</td>
                       <td>Urgent</td>
                       <td>
-                        <span class="badge badge-info">Pending booking</span>
+                        <span class="badge badge-info thmbg">Pending booking</span>
                       </td>
                       <!-- <td class="text-center">-</td> -->
                       <td class="cancel">X</td>
                     </tr>
                     <tr>
-                      <td>Shiela Smith 0987654321
+                      <td>Shiela Smith<span> 0987654321</span>
                       </td>
                       <td>72 F</td>
-                      <td>Dr Patel (Blue Surgery)</td>
+                      <td>Dr Patel <span>(Blue Surgery)</span></td>
                       <td>15/04/20</td>
                       <td>Medication optimisation advice</td>
                       <!-- <td></td> -->
@@ -344,26 +369,26 @@
 
                     </tr>
                     <tr>
-                      <td>Gill Stewarts 2223334444
+                      <td>Gill Stewarts <span>2223334444</span>
                       </td>
                       <td>70 F</td>
-                      <td>Dr Khan (Yellow Surgery)</td>
+                      <td>Dr Khan <span>(Yellow Surgery)</span></td>
                       <td>20/04/20</td>
                       <td>Rate control advice</td>
                       <!-- <td></td> -->
                       <td>AF-</td>
                       <td>Soon</td>
                       <td>
-                        <span class="badge badge-danger">Pending Booking</span>
+                        <span class="badge badge-danger thmbg">Pending Booking</span>
                       </td>
                       <!-- <td class="text-center">-</td> -->
                       <td class="cancel">X</td>
                     </tr>
                     <tr>
-                      <td>Robert Smith 4447778889
+                      <td>Robert Smith <span>4447778889</span>
                       </td>
                       <td>80 M</td>
-                      <td>Dr Jones (Green Surgery)</td>
+                      <td>Dr Jones <span>(Green Surgery)</td></span>
                       <td>25/04/20</td>
                       <td>Anticoagulation advice</td>
                       <!-- <td>Green Surgery</td> -->
@@ -376,81 +401,81 @@
                       <td>22/2/20</td>
                     </tr>
                     <tr>
-                      <td>Mickey Mouse 8765491299
+                      <td>Mickey Mouse <span>8765491299</span>
                       </td>
                       <td>54 M</td>
-                      <td>Dr Neil (Red Surgery)</td>
+                      <td>Dr Neil <span>(Red Surgery)</span></td>
                       <td>22/04/20</td>
                       <td>Symptoms despite base line treatment</td>
                       <!-- <td>Red Surgery</td> -->
                       <td>HeFRef</td>
                       <td>Routine</td>
                       <td>
-                        <span class="badge badge-warning">Booking Pending</span>
+                        <span class="badge badge-warning thmbg">Booking Pending</span>
                       </td>
                       <!-- <td> result awaited</td> -->
                       <td>20/1/20</td>
                     </tr>
                     <tr>
-                      <td>Mickey Mouse 8765491299
+                      <td>Mickey Mouse <span>8765491299</span>
                       </td>
                       <td>54 M</td>
-                      <td>Dr Neil (Red Surgery)</td>
+                      <td>Dr Neil <span>(Red Surgery)</span></td>
                       <td>22/04/20</td>
                       <td>Symptoms despite base line treatment</td>
                       <!-- <td>Red Surgery</td> -->
                       <td>HeFRef</td>
                       <td>Soon</td>
                       <td>
-                        <span class="badge badge-info">Booked</span>
+                        <span class="badge badge-success">Booked</span>
                       </td>
                       <!-- <td> result awaited</td> -->
                       <td>20/1/20</td>
                     </tr>
                     <tr>
-                      <td>Luther Vandross 5463728907
+                      <td>Luther Vandross <span>5463728907</span>
                       </td>
                       <td>68 F</td>
-                      <td>Dr James (Brown Surgery)</td>
+                      <td>Dr James <span>(Brown Surgery)</span></td>
                       <td>28/04/20</td>
                       <td>Assess for pace maker suitability?</td>
                       <!-- <td>Brown Surgery</td> -->
                       <td>HeFRef</td>
                       <td>Medium</td>
                       <td>
-                        <span class="badge badge-warning">Pending Booking</span>
+                        <span class="badge badge-warning thmbg">Pending Booking</span>
                       </td>
                       <!-- <td class="text-center">-</td> -->
                       <td class="cancel">X</td>
                     </tr>
                     <tr>
-                      <td>Michael Jackson 9876527182
+                      <td>Michael Jackson <span>9876527182</span>
                       </td>
                       <td>90 M</td>
-                      <td>Dr Jones (Green Surgery)</td>
+                      <td>Dr Jones <span>(Green Surgery)</span></td>
                       <td>27/04/20</td>
                       <td>Side effect of DOAC – advise</td>
                       <!-- <td>Green Surgery</td> -->
                       <td>AF-</td>
                       <td>Routine</td>
                       <td>
-                        <span class="badge badge-dark">Pending Booking</span>
+                        <span class="badge badge-dark thmbg">Pending Booking</span>
                       </td>
                       <!-- <td class="text-center">-</td> -->
                       <td class="cancel">X</td>
                     </tr>
                     <tr>
-                      <td>Donald Trump 89761526781
+                      <td>Donald Trump <span>89761526781</span>
                       </td>
                       <td>83 M</td>
-                      <td>Dr Jones (Green Surgery)</td>
+                      <td>Dr Jones <span>(Green Surgery)</span></td>
                       <td>28/04/20</td>
                       <td>Rate control needed?</td>
                       <!-- <td> Green Surgery</td> -->
                       <td>AF-</td>
                       <td>Routine</td>
                       <td>
-                        <span class="badge badge-dark">Pending Booking</span>
+                        <span class="badge badge-dark thmbg">Pending Booking</span>
                       </td>
                       <!-- <td> To do list</td> -->
                       <td>18/3/20</td>
