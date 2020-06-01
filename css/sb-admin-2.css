@@ -2255,6 +2255,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
+  border: 0;
   color: #fff;
   background-color: #4e73df;
   border-color: #4e73df;
@@ -2784,12 +2785,12 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #4e73df;
+  color: #288eb2;
   text-decoration: none;
 }
 
 .btn-link:hover {
-  color: #224abe;
+  color:#408aa3;
   text-decoration: underline;
 }
 
@@ -2908,6 +2909,8 @@ input[type="button"].btn-block {
   border: 1px solid #e3e6f0;
   border-radius: 0.35rem;
 }
+
+
 
 .dropdown-menu-left {
   right: auto;
