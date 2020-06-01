@@ -35,7 +35,7 @@
     margin: 0;
     margin-left: 10px;
     color: #13303a;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 13px;
 }
 .details_head_main {
@@ -50,6 +50,7 @@
 .customheader h6 {
     width: auto;
     display: inline-block;
+    font-size: 18px;
 }
 .title {
     font-size: 17px;
@@ -59,6 +60,42 @@
 }
 ul.details li {
     color: #333;
+}
+.case-title h6 {
+    font-size: 16px;
+    font-weight: 800 !important;
+}
+.case-min-title h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card-body .details label {
+    font-size: 13px;
+    font-weight: 700;
+}
+.card-body .details span {
+    font-size: 13px;
+}
+.case-min-title ul.details li {
+    font-size: 13px;
+}
+.clinical-tab thead th {
+    font-size: 15px !important;
+}
+.clinical-tab tbody th {
+    font-weight: 700;
+    font-size: 13px;
+}
+.clinical-tab tbody td {
+    font-size: 13px !important;
+}
+.card-body.action label {
+  font-size: 13px;
+  font-weight: 700;
+}
+.card-body.action input, .card-body.action select, .card-body.action textarea {
+    font-size: 13px !important;
 }
  </style>
 
@@ -331,11 +368,11 @@ ul.details li {
               <div class="row">
                 <div class="col-12">
                   <div class="card card shadow mb-4">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <div class="card-header case-title py-3 d-flex flex-row align-items-center justify-content-between">
                       <h6 class="m-0 font-weight-bold text-primary">Case Details</h6>
                       
                     </div>
-                    <div class="card-body">
+                    <div class="card-body case-min-title">
                       <div class="row">
                         <div class="col-4">
                           <h4 class="title">Referrer</h4>
@@ -381,7 +418,7 @@ ul.details li {
                 </div>
                 <div class="col-12">
                   <div class="card shadow mb-4">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <div class="card-header case-title py-3 d-flex flex-row align-items-center justify-content-between">
                       <h6 class="m-0 font-weight-bold text-primary">Patient details</h6>
                       <div class="details_head_main">
                         <div class="details_head">
@@ -394,7 +431,7 @@ ul.details li {
                         </div>
                       </div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body case-min-title">
                       <div class="row">
                       <div class="col-6">
                         <h4 class="title">Personal details</h4>
@@ -447,10 +484,10 @@ ul.details li {
               <div class="row">
                 <div class="col-12">
                   <div class="card shadow mb-4 min-height">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <div class="card-header case-title py-3 d-flex flex-row align-items-center justify-content-between">
                       <h6 class="m-0 font-weight-bold text-primary">History</h6>
                     </div>
-                      <div class="card-body">
+                      <div class="card-body case-min-title history">
                         <div class="row">
                           <div class="col-4">
                             <h4 class="title">Medical</h4>
@@ -496,10 +533,10 @@ ul.details li {
                 <div class="col-12">
                   <div class="card shadow mb-4">
                     <!-- <div class="card-header">Clinical Details</div> -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <div class="card-header case-title py-3 d-flex flex-row align-items-center justify-content-between">
                       <h6 class="m-0 font-weight-bold text-primary">Clinical Details</h6>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body case-min-title clinic">
                       <div class="details">
                         <label for="">Current Medication: </label>
                         <span>Diuretic</span>
@@ -508,7 +545,7 @@ ul.details li {
 
                         </h6>
                       </div>
-                      <table class="table table-bordered mb-0 clinical_details ">
+                      <table class="table table-bordered mb-0 clinical_details clinical-tab">
                         <thead>
                           <th colspan="6" class="recent">Recent Investigations</th>
                         </thead>
@@ -593,10 +630,10 @@ ul.details li {
               <div class="row">
                 <div class="col-12 ">
                   <div class="card shadow min-height">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <div class="card-header case-title py-3 d-flex flex-row align-items-center justify-content-between">
                       <h6 class="m-0 font-weight-bold text-primary">Action</h6>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body action">
                       <form class="form_main">
                         <div class="row">
                           <div class="col-6">
