@@ -673,7 +673,7 @@ div#myModal_assigned .mdt-cases ul li {
 } */
 .scheduled-box {
     border: solid 1px #ddd;
-    padding: 0;
+    padding: 0 0 15px 0; 
 }
 .scheduled-box h2 {
     padding: 0;
@@ -684,7 +684,7 @@ div#myModal_assigned .mdt-cases ul li {
     box-shadow: 0 0 5px #ddd;
 }
 .scheduled-box-content{
-    padding: 10px;
+    padding: 0 10px;
 }
 .scheduled-box ul.scheduled-box-header {
     background: #288eb2;
@@ -741,3 +741,28 @@ div#myModal_assigned .mdt-cases ul li {
     display: inline-block;
     width: auto;
  }
+
+
+ .clinic_name {
+    padding: 8px 10px;
+}
+.clinic-details table {
+    width: 100%;
+}
+.clinic-details table th, .clinic-details table td {
+    border: solid 1px #ccc;
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 14px;
+    background: rgba(0,0,0,0.1);
+    color: #333;
+}
+.sub-title {
+    padding: 10px 0;
+    color: #555;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.clinic-details {
+    padding: 0 10px;
+}
