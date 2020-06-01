@@ -226,7 +226,7 @@
           <div class="calendar_main card shadow mb-4">
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary">
-                 <span>Calendar</span> 
+                 <span>Clinics Scheduled</span> 
                 <a class="btn btn-primary" style="float: right;" href="add-episode-meeting-minutes.html">Add New</a>
               </h6>
             </div>
@@ -320,9 +320,8 @@
                                     <li> <strong>Sub-Speciality :</strong> Mix Cardiovascular. </li>
                                     <li> <strong>MDT Team :</strong> Akram, Michelle, Robert </li>
                                     <li> <strong>Capacity :</strong> 15 </li>
-
-
                                 </ul>
+                                <a href="#" class="pluse-btn" data-toggle="modal" data-target="#myModal2"> + </a>
                               </div>
                         </div>
                     </div>
@@ -444,9 +443,8 @@
                                     <li> <strong>Sub-Speciality :</strong> Mix Cardiovascular. </li>
                                     <li> <strong>MDT Team :</strong> Akram, Michelle, Robert </li>
                                     <li> <strong>Capacity :</strong> 15 </li>
-
-
                                 </ul>
+                                <a href="#" class="pluse-btn" data-toggle="modal" data-target="#myModal2"> + </a>
                               </div>
                         </div>
                     </div>
@@ -496,9 +494,8 @@
                                   <li> <strong>Sub-Speciality :</strong> Mix Cardiovascular. </li>
                                   <li> <strong>MDT Team :</strong> Akram, Michelle, Robert </li>
                                   <li> <strong>Capacity :</strong> 15 </li>
-
-
                               </ul>
+                              <a href="#" class="pluse-btn" data-toggle="modal" data-target="#myModal2"> + </a>
                             </div>
                       </div>
                   </div></td>
@@ -558,6 +555,136 @@
                   </tr>
                 </tbody>
               </table>
+              <!--------------------Pluse-Event-Popup------------------>
+               <!-- The Modal -->
+  <div class="modal" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Pluse Event</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+
+          <div class="mdt-cases">
+            <h4>MDT Cases</h4>
+              <ul>
+                <li>Pramod Kushwah758</li>
+                <li>Adam smith 1234 5678 90</li>
+                <li>Donald Trump 89761526781</li>
+                <li>Gill Stewarts 2223334444</li>
+                <li>Luther Vandross 5463728907</li>
+                <li>Michael Jackson 9876527182</li>
+                <!-- <li>Mickey Mouse 8765491299</li> -->
+              </ul>
+          </div>
+          <div class="event-details">
+            <div class="event-popup">
+              <ul>
+                <li> <strong>Times :</strong> 9 AM  - 11 AM</li>
+                <li> <strong>Sub-Speciality :</strong> Mix Cardiovascular. </li>
+                <li> <strong>MDT Team :</strong> Akram, Michelle, Robert </li>
+                <li> <strong>Capacity :</strong> 15 </li>
+              </ul>
+            </div>
+
+            <h4>MDT Cases</h4>
+            <ul>
+              <li>Pramod Kushwah758</li>
+              <li>Adam smith 1234 5678 90</li>
+              <li> &nbsp; </li>
+              <li>&nbsp;</li>
+              <!-- <li>&nbsp;</li> -->
+
+            </ul>
+
+          </div>
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-------------Pluse-Event-Popup-End------------->
+
+
+  
+
+              <div class="popup_btn">
+                  <a href="#" class="btn btn-primary float-right" data-toggle="modal" data-target="#myModal">
+                      Add Clinic
+                  </a>
+              </div>
+
+              <!-------------Add-Clinic-Popup-Start------------>
+
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Add Clinics</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="add-field">
+                <label for="">Clinic Name</label>
+                <input type="text" >
+            </div>
+            <div class="add-field">
+              <label for="">Set Time</label>
+              <input type="time" >
+          </div>
+          <div class="add-field">
+            <label for="">Set Date</label>
+            <input type="date" >
+        </div>
+        <div class="add-field">
+          <label for="">Slot</label>
+          <select name="" id="">
+              <option value="">Morning</option>
+              <option value="">Evening</option>
+          </select>
+        </div>
+        <div class="add-field">
+          <label for="">Sub-Speciality</label>
+          <input type="text" >
+      </div>
+      <div class="add-field">
+        <label for="">MDT Team</label>
+        <input type="text" >
+    </div>
+    <div class="add-field">
+      <label for="">Capacity</label>
+      <input type="number" >
+  </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-------------Add-Clinic-Popup-Start------------>
+
             </div>
           </div>
 
