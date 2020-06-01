@@ -492,3 +492,9 @@ button.btn.btn-primary.custom-btn-color.active {
     background: #185064 !important;
     border-radius: 3px 0 0px 3px;
 }
+.calendar_main .table tbody tr:nth-child(even) td {
+    border-bottom-style: dotted;
+}
+.calendar_main .table tbody tr:nth-child(odd) td {
+    border-top-style: dotted;
+}
