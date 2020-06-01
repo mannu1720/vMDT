@@ -440,12 +440,10 @@ form.form_main label {
     position: relative;
 }
 .event {
-    position: absolute;
-    height: 142px;
-    background: #3788d8;
-    left: -6px;
-    right: -6px;
-    top: -6px;
+    /* position: absolute; */
+    /* height: 142px; */
+    /* background: #3788d8; */
+    
     color: white;
     padding: 10px;
 }
@@ -489,6 +487,15 @@ button.btn.CCG {
 }
 .event-header ul li{
     margin-bottom: 5px;
+    color: #ddd;
+    font-size: 14px
+}
+.event-header ul li strong {
+    color: #eee;
+}
+.event .event-header a {
+    text-decoration: none;
+    color: white;
 }
 .card-header a.btn {
     padding: 5px 10px;
@@ -553,14 +560,19 @@ button.btn.btn-primary.custom-btn-color.active {
 }
 a.pluse-btn {
     background: white;
-    padding: 1px 8px;
-    border-radius: 4px;
+    padding: 4px 10px;
+    border-radius: 3px;
     float: right;
     line-height: normal;
     text-decoration: none;
     position: absolute;
     bottom: 5px;
     right: 7px;
+    color: #333 !important;
+}
+a.pluse-btn img{
+    max-width: 15px;
+    margin-left: 5px;
 }
 div#myModal2 .modal-dialog {
     max-width: 650px;
@@ -654,4 +666,23 @@ div#myModal_assigned .mdt-cases ul li {
     padding: 5px 10px;
     margin-bottom: 10px;
     color: #999;
+}
+.scheduled-box-main{
+    max-width: 20%;
+    flex: 0 0 20%;
+}
+.scheduled-box {
+    border: solid 1px #ddd;
+    padding: 0;
+}
+.scheduled-box h2 {
+    padding: 0;
+    font-size: 16px;
+    padding: 10px;
+    background: #ddd;
+    color: #333;
+    box-shadow: 0 0 5px #ddd;
+}
+.scheduled-box-content{
+    padding: 10px;
 }
