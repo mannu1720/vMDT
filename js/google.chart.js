@@ -16,11 +16,11 @@ function onGoingMDTWithCaseAgeAndSpcialization() {
   let data = google.visualization.arrayToDataTable([
     ['Case Timeline in days', 'HeFPef', 'HeFRef', 'Atrial Fibrillation or Flutter', 'Valve Clinic', 'Other Heart Failure', 'Aetiology', 'Average'],
     ['0-2', 2, 2, 2, 1, 2, 0, 9],
-    ['3-5', 2, 2, 3, 1, 3, 0, 11],
-    ['6-10', 3, 2, 6, 8, 6, 1, 26],
-    ['11-20', 2, 4, 3, 4, 2, 0, 15],
+    ['3-5', 2, 2, 3, 3, 4, 0, 14],
+    ['6-10', 2, 1, 6, 5, 5, 1, 20],
+    ['11-20', 2, 5, 3, 4, 2, 0, 16],
     ['21-30', 1, 2, 0, 0, 1, 2, 6],
-    ['31-60', 0, 0, 1, 1, 1, 0, 3],
+    ['31-60', 1, 0, 1, 1, 1, 0, 4],
     ['>60', 1, 2, 0, 0, 0, 0, 3]
   ]);
 
@@ -43,7 +43,7 @@ function onGoingMDTWithCaseAgeAndSpcialization() {
 
 function onGoingMDTWithSpecializationAndPriority() {
   let data = google.visualization.arrayToDataTable([
-    ['Specialisation', 'High Priority', 'Scheduled', 'Tagged', 'Total'],
+    ['Specialisation', 'Urgent', 'Scheduled', 'Tagged', 'Total'],
     ['HeFPef', 2, 7, 2, 11],
     ['HeFRef', 3, 10, 1, 15],
     ['Atrial Fibrillation or Flutter', 1, 8, 1, 15],
@@ -64,6 +64,7 @@ function onGoingMDTWithSpecializationAndPriority() {
     curveType: 'function',
     vAxis: { format: 'decimal', title: 'Number of Cases' },
     hAxis: { title: 'Specialitisation', slantedText: true },
+    chartArea: { left: 50, width: '77%', bottom: 75, top: 20 },
     colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
 
     seriesType: 'bars',
@@ -188,15 +189,15 @@ function primaryCaseNetwork() {
 function referralToTreatmentTimeLine() {
   let data = google.visualization.arrayToDataTable([
     ['Specialization', 'Case Creation', 'Episode Scheduled', 'Episode', 'Actions Agreed', 'Actions Sent', 'Actions Closed', 'Case Closed '],
-    ['AF-', 1, 8.75, 1.75, 8.75, 8.75, 12.75, 12.75],
-    ['HeFRef', 1, 9.05, 3, 9.05, 9.05, 14.5, 14.5],
-    ['HeFPef', 1, 12.05, 2, 12.05, 12.05, 22.5, 25.5]
+    ['AF-', 1, 10, 11, 11, 11, 16.75, 18.75],
+    ['HeFRef', 1, 8, 9, 9, 9, 13.5, 15],
+    ['HeFPef', 1, 13, 14, 14, 14, 16.5, 18]
   ]);
 
   let options = {
     // title: 'Referral to treatment timeline',
-    chartArea: { left: '60', width: '75%' },
-    isStacked: true,
+    chartArea: { left: '60', width: '70%' },
+    // isStacked: true,
     colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
 
 
