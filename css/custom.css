@@ -247,10 +247,10 @@ form.form_main label {
 .required_field .form-check-label, .required_field label {
     /* margin-left: 21px; */
     font-size: 14px;
-    font-size: 15px;
     color: #333;
     text-transform: capitalize;
     margin-bottom: 3px;
+    font-weight: 600;
 }
 .required_field input[type="checkbox"] {
     margin-right: 6px;
@@ -509,10 +509,10 @@ button.btn.btn-primary.custom-btn-color.active {
     position: absolute;
 }
 .custom_check input[type="checkbox"]:checked + label:after {
-    background: #05aece;
+    /* background: #05aece; */
     content: "\f00c";
     font-family: FontAwesome;
-    color: white;
+    color: #05aece;
     font-weight: 100;
     line-height: 14px;
     font-size: 12px;
