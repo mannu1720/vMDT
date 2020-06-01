@@ -423,6 +423,9 @@ form.form_main label {
 .callendar_date {
     margin: auto;
     display: inline-block;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
 }
 .calendar_btn_header{
     text-align:center;
@@ -533,4 +536,68 @@ button.btn.btn-primary.custom-btn-color.active {
 }
 .calendar_main .table tbody tr:nth-child(odd) td {
     border-top-style: dotted;
+}
+a.pluse-btn {
+    background: white;
+    padding: 1px 8px;
+    border-radius: 4px;
+    float: right;
+    line-height: normal;
+    text-decoration: none;
+}
+div#myModal2 .modal-dialog {
+    max-width: 650px;
+}
+.mdt-cases {
+    display: inline-block;
+    width: 48%;
+    float: left;
+    border: solid 1px #ddd;
+    padding: 15px;
+}
+
+.mdt-cases ul{
+    max-height: 278px;
+    min-height: 278px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+}
+.event-details {
+    display: inline-block;
+    width: 48%;
+    float: right;
+    border: solid 1px #ddd;
+    padding: 15px;
+}
+div#myModal2 .modal-body ul li {
+    border: solid 1px #ddd;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+div#myModal2 .modal-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+div#myModal2 .modal-body h4{
+    font-size:16px;
+    color: #333;
+    font-weight: bold;
+}
+.event-popup {
+    background: #3788d8;
+    margin-top: -15px;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.event-popup li {
+    border: none !important;
+    line-height: normal;
+    padding: 2px 0 !important;
+    margin: 0 !important;
+    color: #fff !important;
 }
