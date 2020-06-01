@@ -7,7 +7,7 @@
 .logo img {
     width: 100%;
     height: auto;
-    max-width: 140px;
+    max-width: 120px;
 }
 .navbar-expand .navbar-nav .nav-link{
     position: relative;
@@ -49,6 +49,7 @@ button#sidebarToggleTop {
     line-height: normal;
     padding: 0;
     height: auto;
+    color: #102b34;
 }
 #wrapper #content-wrapper {
 
@@ -83,6 +84,7 @@ body#page-top.sidebar-toggled #wrapper #content-wrapper {
     font-size: 12px;
     border-color: #ddd;
     color: #333;
+    padding: 5px;
     cursor: pointer;
 }
 .card div.dataTables_wrapper div.dataTables_length select {
@@ -439,11 +441,11 @@ form.form_main label {
 }
 .event {
     position: absolute;
-    height: 176px;
+    height: 142px;
     background: #3788d8;
-    left: -12px;
-    right: -12px;
-    top: -12px;
+    left: -6px;
+    right: -6px;
+    top: -6px;
     color: white;
     padding: 10px;
 }
@@ -463,7 +465,19 @@ button.btn.month {
     margin-right: 10px;
     padding: 0 0px 0 10px;
 }
+
 button.btn.month i.fa.fa-angle-down {
+    border-left: solid 1px #ddd;
+    line-height: 21px;
+    padding: 6px;
+    margin-left: 10px;
+}
+button.btn.CCG {
+    border: solid 1px rgba(221, 221, 221, 0.7);
+    margin-right: 10px;
+    padding: 0 0px 0 0px;
+}
+button.btn.CCG {
     border-left: solid 1px #ddd;
     line-height: 21px;
     padding: 6px;
@@ -487,10 +501,10 @@ button.btn.month i.fa.fa-angle-down {
     font-size: 18px;
 }
 .custom-btn-color{
-    background: linear-gradient(45deg,#408aa3 0%,#288eb2 100%)!important;
+    background: linear-gradient(45deg,#102b34 0%,#15343f 100%) !important;
 }
 .navbar-search .btn{
-    background: linear-gradient(45deg,#408aa3 0%,#288eb2 100%)!important;
+    background: linear-gradient(45deg,#102b34 0%,#15343f 100%) !important;
 }
 button.btn.btn-primary.custom-btn-color.active {
     background: #185064 !important;
@@ -544,6 +558,9 @@ a.pluse-btn {
     float: right;
     line-height: normal;
     text-decoration: none;
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
 }
 div#myModal2 .modal-dialog {
     max-width: 650px;
@@ -600,4 +617,17 @@ div#myModal2 .modal-body h4{
     padding: 2px 0 !important;
     margin: 0 !important;
     color: #fff !important;
+}
+div#myModal .modal-body .add-field input, div#myModal .modal-body .add-field select {
+    width: calc(100% - 150px);
+    height: 35px;
+    border: solid 1px #ddd;
+    padding: 5px 10px;
+}
+div#myModal .modal-body .add-field{
+    margin-bottom: 10px;
+}
+div#myModal .modal-body .add-field label{
+    width: 140px;
+    display: inline-block;
 }
