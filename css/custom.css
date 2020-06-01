@@ -84,6 +84,7 @@ body#page-top.sidebar-toggled #wrapper #content-wrapper {
     font-size: 12px;
     border-color: #ddd;
     color: #333;
+    padding: 5px;
     cursor: pointer;
 }
 .card div.dataTables_wrapper div.dataTables_length select {
@@ -440,11 +441,11 @@ form.form_main label {
 }
 .event {
     position: absolute;
-    height: 176px;
+    height: 142px;
     background: #3788d8;
-    left: -12px;
-    right: -12px;
-    top: -12px;
+    left: -6px;
+    right: -6px;
+    top: -6px;
     color: white;
     padding: 10px;
 }
@@ -545,6 +546,9 @@ a.pluse-btn {
     float: right;
     line-height: normal;
     text-decoration: none;
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
 }
 div#myModal2 .modal-dialog {
     max-width: 650px;
