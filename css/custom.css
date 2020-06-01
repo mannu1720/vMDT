@@ -49,7 +49,7 @@ button#sidebarToggleTop {
     line-height: normal;
     padding: 0;
     height: auto;
-    color: #102b34;
+    color: #288eb2;
 }
 #wrapper #content-wrapper {
 
@@ -508,10 +508,10 @@ button.btn.CCG {
     font-size: 18px;
 }
 .custom-btn-color{
-    background: linear-gradient(45deg,#102b34 0%,#15343f 100%) !important;
+    background: #288eb2 !important;
 }
 .navbar-search .btn{
-    background: linear-gradient(45deg,#102b34 0%,#15343f 100%) !important;
+    background: #288eb2 !important;
 }
 button.btn.btn-primary.custom-btn-color.active {
     background: #185064 !important;
