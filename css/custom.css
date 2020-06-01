@@ -528,3 +528,9 @@ button.btn.btn-primary.custom-btn-color.active {
 .custom_check label{
    margin-left: 6px;
 }
+.calendar_main .table tbody tr:nth-child(even) td {
+    border-bottom-style: dotted;
+}
+.calendar_main .table tbody tr:nth-child(odd) td {
+    border-top-style: dotted;
+}
