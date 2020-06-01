@@ -188,9 +188,9 @@ function primaryCaseNetwork() {
 function referralToTreatmentTimeLine() {
   let data = google.visualization.arrayToDataTable([
     ['Specialization', 'Case Creation', 'Episode Scheduled', 'Episode', 'Actions Agreed', 'Actions Sent', 'Actions Closed', 'Case Closed '],
-    ['AF-', 1, 10, 11, 11, 11, 16.75, 18.75],
-    ['HeFRef', 1, 8, 9, 9, 9, 13.5, 15],
-    ['HeFPef', 1, 13, 14, 14, 14, 16.5, 18]
+    ['AF-', 1, 10, 11, 11, 11, 16.75, 16.75],
+    ['HeFRef', 1, 8, 9, 9, 9, 13.5, 13.5],
+    ['HeFPef', 1, 13, 14, 14, 14, 16.5, 16.5]
   ]);
 
   let options = {
