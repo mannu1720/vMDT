@@ -641,3 +641,17 @@ div#myModal .modal-body .add-field label{
 .mdt-cases ul li {
     cursor: pointer;
 }
+div#myModal_assigned .mdt-cases {
+    width: 100%;
+}
+div#myModal_assigned .mdt-cases ul {
+    list-style: none;
+    padding: 0;
+}
+
+div#myModal_assigned .mdt-cases ul li {
+    border: solid 1px #ddd;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    color: #999;
+}

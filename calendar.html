@@ -315,9 +315,9 @@
                     <td>&nbsp;</td>
                     <td>
                       <div class="event-main">
-                        <div class="event">
+                        <div class="event"  >
                           <div class="event-header">
-                            <ul>
+                            <ul data-toggle="modal" data-target="#myModal_assigned">
                               <li>9 AM - 11 AM</li>
                               <li>
                                 <strong>Sub-Speciality :</strong> Mix Cardiovascular. </li>
@@ -443,7 +443,7 @@
                       <div class="event-main">
                         <div class="event">
                           <div class="event-header">
-                            <ul>
+                            <ul data-toggle="modal" data-target="#myModal_assigned">
                               <li>2 PM - 4 PM</li>
                               <li>
                                 <strong>Sub-Speciality :</strong> Mix Cardiovascular. </li>
@@ -498,7 +498,7 @@
                       <div class="event-main">
                         <div class="event">
                           <div class="event-header">
-                            <ul>
+                            <ul data-toggle="modal" data-target="#myModal_assigned">
                               <li>4 PM - 6 PM</li>
                               <li>
                                 <strong>Sub-Speciality :</strong> Mix Cardiovascular. </li>
@@ -569,8 +569,9 @@
             </tr>
             </tbody>
             </table>
+          
             <!--------------------Pluse-Event-Popup------------------>
-            <!-- The Modal -->
+          
             <div class="modal" id="myModal2">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -639,10 +640,59 @@
 
 
 
+            <!--------------------Assigned-Event-Popup------------------>
+          
+            <div class="modal" id="myModal_assigned">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Asssigned MDT Cases to Clinic</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+
+                    <div class="mdt-cases">
+                      <!-- <h4>MDT Cases</h4> -->
+                      <ul>
+                        <li class="list-item" draggable="true">Adam smith 1234 5678 90</li>
+                        <li class="list-item" draggable="true">Shiela Smith 0987654321</li>
+                        <li class="list-item" draggable="true">Gill Stewarts 2223334444</li>
+                        <li class="list-item" draggable="true">Robert Smith 4447778889</li>
+                        <li class="list-item" draggable="true">Mickey Mouse 8765491299</li>
+                        <li class="list-item" draggable="true">Mickey Mouse 8765491299</li>
+                        <li class="list-item" draggable="true">Luther Vandross 5463728907</li>
+                        <li class="list-item" draggable="true">Michael Jackson 9876527182</li>
+                        <li class="list-item" draggable="true">Donald Trump 89761526781</li>
+                      </ul>
+                    </div>
+                 
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-------------Assigned-Event-Popup-End------------->
+
+
+
+
             <div class="popup_btn">
               <a href="#" class="btn btn-primary float-right" data-toggle="modal" data-target="#myModal">
                 Add Clinic
               </a>
+              
+              
             </div>
 
             <!-------------Add-Clinic-Popup-Start------------>
