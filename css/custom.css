@@ -667,10 +667,10 @@ div#myModal_assigned .mdt-cases ul li {
     margin-bottom: 10px;
     color: #999;
 }
-.scheduled-box-main{
+/* .scheduled-box-main{
     max-width: 20%;
     flex: 0 0 20%;
-}
+} */
 .scheduled-box {
     border: solid 1px #ddd;
     padding: 0;
@@ -716,3 +716,28 @@ div#myModal_assigned .mdt-cases ul li {
 .scheduled-box-content ul.mdt-case-card li {
     padding: 2px 0;
 }
+.scheduled-box-content table tr th, .scheduled-box-content table tr td {
+    border: solid 1px #ddd;
+    padding: 5px;
+    font-size: 14px;
+}
+.scheduled-box-content table {
+    width: 100%;
+}
+.scheduled-box ul.scheduled-box-header li {
+    color: #fafafa;
+    /* display: inline-block; */
+    margin-bottom: 5px;
+}
+.scheduled-box ul.scheduled-box-header .left {
+    display: inline-block;
+    width: auto;
+}
+.scheduled-box ul.scheduled-box-header .right {
+    display: inline-block;
+    width: auto;
+ }
+.scheduled-box ul.scheduled-box-header .center {
+    display: inline-block;
+    width: auto;
+ }
