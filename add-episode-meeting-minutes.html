@@ -152,6 +152,16 @@
 .customcard {
     border: 1px solid #ddd;
 }
+.tab_button ul li.active a {
+    background: white;
+    color: #05aece;
+}
+.assign h4 {
+    color: #333;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
   </style>
 
 </head>
@@ -612,7 +622,9 @@
                   <div class="tab_main">
                <div class="tab_button">
                 <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab" href="#Uptitrate">Uptitrate</a></li>
+                  <!-- <li ><a data-toggle="tab" href="#Medication" class="active">Medication</a></li> -->
+                  <li><a data-toggle="tab" href="#Medicationrr" class="active">Medication</a></li>
+                  <li><a data-toggle="tab" href="#Uptitrate">Uptitrate</a></li>
                   <li><a data-toggle="tab" href="#Start">Start </a></li>
                   <li><a data-toggle="tab" href="#Stop">Stop </a></li>
                   <li><a data-toggle="tab" href="#Reduce">Reduce </a></li>
@@ -620,7 +632,17 @@
                </div>
                   
                     <div class="tab-content">
-                      <div id="Uptitrate" class="tab-pane fade in active show">
+                      <!-- <div id="Medication" class="tab-pane fade in active show">
+                            <div class="assign">
+                              <h4>Assign Action To</h4>
+                            </div>
+                      </div> -->
+                      <div id="Medicationrr" class="tab-pane fade in active show">
+                        <div class="assign">
+                          <h4>Assign Action To</h4>
+                        </div>
+                      </div>
+                      <div id="Uptitrate" class="tab-pane fade">
                         <div class="row mb-3">
                           <div class="col-lg-4 form-check">
                               <div class="custom_check">
@@ -956,13 +978,13 @@
                   </div>
                   <div class="card-body">
                     <div class="tab_title">
-                      <h4>Book/Blood Test</h4>
+                      <h4>Book</h4>
                     </div>
                   <div class="tab_main">
                <div class="tab_button">
                 <ul class="nav nav-tabs">
-                  <li><a data-toggle="tab" href="#Book">Book </a></li>
-                  <li><a data-toggle="tab" href="#Blood">Blood test </a></li>
+                  <li><a data-toggle="tab" href="#Book" class="active">Book </a></li>
+                  <li><a data-toggle="tab" href="#details">Details </a></li>
                 </ul>
                </div>
                   
@@ -1047,7 +1069,37 @@
                           </div>
                         </div>
                       </div>
-                      <div id="Blood" class="tab-pane fade">
+                      <div id="details" class="tab-pane fade">
+                        <div class="assign">
+                          <h4>Assign Action To</h4>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+
+
+                  </div>
+                  <div class="card-body">
+                    <div class="tab_title">
+                      <h4>Blood Test</h4>
+                    </div>
+                  <div class="tab_main">
+               <div class="tab_button">
+                <ul class="nav nav-tabs">
+                  <li><a data-toggle="tab" href="#Bloodtest" class="active">Blood Test </a></li>
+                  <li><a data-toggle="tab" href="#details2">Details </a></li>
+
+                </ul>
+               </div>
+                  
+                    <div class="tab-content">
+                      <div id="details2" class="tab-pane fade ">
+                        <div class="assign">
+                          <h4>Assign Action To</h4>
+                        </div>
+                      </div>
+                      <div id="Bloodtest" class="tab-pane fade active show">
                         <div class="row">
                             
                           <div class="col-lg-4 form-group">
