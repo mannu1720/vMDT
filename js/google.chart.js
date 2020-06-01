@@ -165,7 +165,7 @@ function primaryCaseNetwork() {
     // },
     chartArea: { left: '100', width: '100%', right: '0', bottom: 90, top: 40 },
     bars: 'vertical',
-    colors: ['#5fdfb1', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
+    colors: ['#288eb2', '#1271B0', '#e15c5b', '#edaf28', '#12A6B0', '#4EE2EC', '#98AFC7', '#488AC7', '#25383C'],
     legend: { position: 'top' },
 
     vAxis: {
