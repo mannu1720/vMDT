@@ -13,8 +13,8 @@
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Custom styles for this template -->
   <link href="css/sb-admin-2.css" rel="stylesheet">
@@ -23,6 +23,92 @@
 
   <!-- Custom styles for this page -->
   <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+  <style>
+    .details_head_main .details_head span {
+     color: #888;
+     font-weight: 400;
+     font-size: 13px;
+ }
+ .details_head_main .details_head label {
+     margin: 0;
+     margin-left: 10px;
+     color: #13303a;
+     font-weight: 700;
+     font-size: 13px;
+ }
+ .details_head_main {
+     width: auto;
+     display: inline-block;
+     float: right;
+ }
+ .details_head {
+     width: auto;
+     display: inline-block;
+ }
+ .customheader h6 {
+     width: auto;
+     display: inline-block;
+     font-size: 18px;
+ }
+ .title {
+     font-size: 17px;
+     color: #333;
+     font-weight: 600;
+     margin-bottom: 3px;
+ }
+ ul.details li {
+     color: #333;
+ }
+ .case-title h6 {
+     font-size: 16px;
+     font-weight: 800 !important;
+ }
+ .case-min-title h4 {
+     font-size: 15px;
+     font-weight: 700;
+     margin-bottom: 10px;
+ }
+ .card-body .details label {
+     font-size: 13px;
+     font-weight: 700;
+ }
+ .card-body .details span {
+     font-size: 13px;
+ }
+ .case-min-title ul.details li {
+     font-size: 13px;
+ }
+ .clinical-tab thead th {
+     font-size: 15px !important;
+ }
+ .clinical-tab tbody th {
+     font-weight: 700;
+     font-size: 13px;
+ }
+ .clinical-tab tbody td {
+     font-size: 13px !important;
+ }
+ .card-body.action label {
+   font-size: 13px;
+   font-weight: 700;
+ }
+ .card-body.action input, .card-body.action select, .card-body.action textarea {
+     font-size: 13px !important;
+ }
+ .customheader h6 span {
+     color: #9a9a9a;
+     font-size: 14px;
+     color: #888;
+     font-weight: 400;
+     font-size: 14px;
+     position: relative;
+     top: -2px;
+ }
+ .custom_check label {
+    margin-left: 25px;
+}
+  </style>
 
 </head>
 
@@ -268,11 +354,148 @@
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary">Add Episode Meeting Minutes</h6>
             </div>
+
+            <div class="card shadow card shadow mb-4 mr-3 ml-3 mt-3">
+              <div class="card-header py-3 customheader">
+                <h6 class="m-0 font-weight-bold text-primary">MDT <span>(54127)</span>
+                </h6>
+                <div class="details_head_main">
+                  <div class="details_head">
+                    <label for="">Case Number:</label>
+                    <span>54127</span>
+                  </div>
+                  <div class="details_head">
+                    <label for="">Date Referred:</label>
+                    <span>15-May-2020</span>
+                  </div>
+                  <div class="details_head">
+                    <label for="">Priority:</label>
+                    <span>Routine</span>
+                  </div>
+                  <!-- <div class="details_head">
+                    <label for="">Case Number:</label>
+                    <span>54127</span>
+                  </div> -->
+                  <div class="details_head">
+                    <label for="">Coordinator:</label>
+                    <span>Dr. Majid Akram</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card card shadow mb-4">
+                      <div class="card-header case-title py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">Case Details</h6>
+                        
+                      </div>
+                      <div class="card-body case-min-title">
+                        <div class="row">
+                          <div class="col-4">
+                            <h4 class="title">Referrer</h4>
+                            <div class="details">
+                              <label for="">Name of Referrer:</label>
+                              <span>Dr Jones</span>
+                            </div>
+                            <div class="details">
+                              <label for="">Designation:</label>
+                              <span>GP</span>
+                            </div>
+                            <div class="details">
+                              <label for="">GMC number:</label>
+                              <span>6171433</span>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <h4 class="title">Cardiology</h4>
+                            <div class="details">
+                              <label for="">Sub-Speciality: </label>
+                              <span>Heart Failure with Reduced Ejection Fraction</span>
+                            </div>
+                            <div class="details">
+                              <label for="">Details of reason for referral / presenting symptoms: </label>
+                              <span>
+                                Continuing SOBOE despite 10mg Ramipril and 10mg Bisoprolol and 80mg Furosemide. NYHA 3
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                  <div class="col-12">
+                    <div class="card shadow">
+                      <div class="card-header case-title py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">Patient details</h6>
+                        <div class="details_head_main">
+                          <div class="details_head">
+                            <label for="">Name:</label>
+                            <span>MICKEY, Mouse (Mr)</span>
+                          </div>
+                          <div class="details_head">
+                            <label for="">NHS No:</label>
+                            <span>8887776567</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body case-min-title">
+                        <div class="row">
+                        <div class="col-6">
+                          <h4 class="title">Personal</h4>
+                          <div class="details">
+                            <label for="">D.O.B.: </label>
+                            <span>18-Nov-1928</span>
+                          </div>
+                          <div class="details">
+                            <label for=""> Address:</label>
+                            <span> Mickey Mouse Clubhouse London</span>
+                          </div>
+                          
+                          <div class="details">
+                            <label for=""> Home tele No:</label>
+                            <span> 01778 576880</span>
+                          </div>
+                          <div class="details">
+                            <label for=""> Mobile number:</label>
+                            <span>  07867111999</span>
+                          </div>
+                          
+                          <div class="details">
+                            <label for=""> Next Of Kin / contact details:</label>
+                            <span> Minnie mouse (Wife)</span>
+                          </div>
+                        </div>
+                       
+      
+                        <div class="col-6">
+                          <h4 class="title">GP's</h4>
+                          <div class="details">
+                            <label for=""> Registered GP:</label>
+                            <span> MR Jacob Stuarts </span>
+                          </div>
+                          <div class="details">
+                            <label for=""> Practice:</label>
+                            <span> The Knightsbridge Practice Temple Street Market Deeping Lincolnshire PE6 8QQ</span>
+                          </div>
+                          <div class="details">
+                            <label for="">Consultant:</label>
+                            <span>NA</span>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="card-body">
-              <form action="">
+              <!-- <form action="">
                 <div class="card card shadow mb-4">
                   <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Title</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Case details </h6>
                   </div>
                   <div class="card-body">
                     <div class="row">
@@ -311,7 +534,7 @@
                     </div>
                   </div>
                 </div>
-              </form>
+              </form> -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
                   <h6 class="m-0 font-weight-bold text-primary">Required <span class="text-danger">*</span></h6>
@@ -409,58 +632,82 @@
                       </div>
                       <div class="row mb-3">
                         <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="" value="">ACEi
-                          </label>
+                            <div class="custom_check">
+                                <input type="checkbox" class="" value="" id="ACEi">
+                                <label class="form-check-label" for="ACEi">
+                                ACEi
+                              </label>
+                            </div>
                           <input type="text" name="" id="" class="form-control">
                         </div>
                         <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="" value="">ARB
-                          </label>
+                          <div class="custom_check">
+                            <input type="checkbox" class="" value="" id="ARB">
+                            <label class="form-check-label" for="ARB">ARB
+                            </label>
+                          </div>
                           <input type="text" name="" id="" class="form-control">
                         </div>
                         <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="" value="">B blocker
-                          </label>
-                          <input type="text" name="" id="" class="form-control">
+                          <div class="custom_check">
+                            <input type="checkbox" class="" value="" id="blocker">
+                            <label class="form-check-label" for="blocker">
+                              B blocker
+                            </label>
+                          </div>
+                            <input type="text" name=""  class="form-control" >
+                           
                         </div>
                       </div>
 
 
                       <div class="row mb-3">
                         <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="" value="">Spironolactone
-                          </label>
+                          <div class="custom_check">
+                            <input type="checkbox" class="" value="" id="Spironolactone">
+                            <label class="form-check-label" for="Spironolactone">Spironolactone</label>
+                          </div>
+                          <input type="text" name=""  class="form-control">
+                        </div>
+                        <div class="col-lg-4 form-check">
+                          <div class="custom_check">
+                            <input type="checkbox" class="" value="" id="Eplerenone">
+                            <label class="form-check-label" for="Eplerenone">
+                              Eplerenone
+                            </label>
+                          </div>
                           <input type="text" name="" id="" class="form-control">
                         </div>
                         <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="" value="">Eplerenone
-                          </label>
-                          <input type="text" name="" id="" class="form-control">
-                        </div>
-                        <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="" value="">Entresto
-                          </label>
+                          <div class="custom_check">
+                            <input type="checkbox" class="" value="" id="Entresto">
+                            <label class="form-check-label" for="Entresto">
+                              Entresto
+                            </label>
+                          </div>
+                          
                           <input type="text" name="" id="" class="form-control">
                         </div>
                       </div>
                         <div class="row mb-3">
                          
                           <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="" value="">DOAC
-                            </label>
+                            
+                            <div class="custom_check">
+                              <input type="checkbox" class="" value="" id="DOAC">
+                              <label class="form-check-label" for="DOAC">
+                                DOAC
+                              </label>
+                            </div>
                             <input type="text" name="" id="" class="form-control">
                           </div>
                           <div class="col-lg-4 form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="" value="">other
-                            </label>
+                            <div class="custom_check">
+                              <input type="checkbox" class="" value="" id="other">
+                              <label class="form-check-label" for="other">
+                                other
+                              </label>
+                            </div>
                             <input type="text" name="" id="" class="form-control">
                           </div>
                         </div>
@@ -471,35 +718,50 @@
                       </div>
                       <div class="row mb-3">
                         <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="" value="">ACEi
-                          </label>
+                          <div class="custom_check">
+                            <input type="checkbox" class="" value="" id="ACEii">
+                            <label class="form-check-label" for="ACEii">
+                              ACEi
+                            </label>
+                          </div>
                           <input type="text" name="" id="" class="form-control">
                         </div>
                         <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="" value="">ARB
-                          </label>
+                          <div class="custom_check">
+                            <input type="checkbox" class="" value="" id="ARbB">
+                            <label class="form-check-label" for="ARbB">
+                              ARB
+                            </label>
+                          </div>
                           <input type="text" name="" id="" class="form-control">
                         </div>
                         <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="" value="">B blocker
-                          </label>
+                          <div class="custom_check">
+                            <input type="checkbox" class="" value="" id="blbocker">
+                            <label class="form-check-label" for="blbocker">
+                              B blocker
+                            </label>
+                          </div>
                           <input type="text" name="" id="" class="form-control">
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="" value="">Spironolactone
-                          </label>
+                          <div class="custom_check">
+                            <input type="checkbox" class="" value="" id="Spbironolactone">
+                            <label class="form-check-label" for="Spbironolactone">
+                              Spironolactone
+                            </label>
+                          </div>
                           <input type="text" name="" id="" class="form-control">
                         </div>
                         <div class="col-lg-4 form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="" value="">Eplerenone
-                          </label>
+                          <div class="custom_check">
+                            <input type="checkbox" class="" value="" id="Epblerenone">
+                            <label class="form-check-label" for="Epblerenone">
+                              Eplerenone
+                            </label>
+                          </div>
                           <input type="text" name="" id="" class="form-control">
                         </div>
                         <div class="col-lg-4 form-check">
@@ -687,9 +949,9 @@
                       </div>
                       <div class="row">
                         <div class="col-lg-4 form-check">
-                          <!-- <label class="form-check-label">
+                          <label class="form-check-label">
                             <input type="checkbox" class="" value="">Book in clinic for Pacemaker
-                          </label> -->
+                          </label>
                         <input type="text" name="" id="" class="form-control">
                         </div>
                         <div class="col-lg-6 form-check">
